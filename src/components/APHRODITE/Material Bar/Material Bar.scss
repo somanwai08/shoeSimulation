@@ -1,0 +1,36 @@
+
+@import url('https://fonts.cdnfonts.com/css/elgoc');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.materialBar{
+    border-bottom: 0.5px #6E550F solid;
+    padding-bottom: 30px;
+    width: 90%;
+    margin: 0 auto;
+    .subTitle{
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-family: "Elgoc",sans-serif;
+        font-weight: 600;
+        font-size:20px;
+        color:#6e550F;
+    }
+    img{
+        padding-top: 10px;
+        width:50px;
+    }
+
+   .active.text{
+    color:#D1a543;
+    text-decoration: underline;
+    
+   }
+   .materialName{
+    font-family: "Montserrat", Sans-serif;
+   }
+
+   .text{
+    color:#6E550F;
+   }
+}
+

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.gemBar{
+    // text-align: center;
+    h4{
+        font-family: "Montserrat", Sans-serif;
+        font-weight: 300;
+        color:#6E550F;
+        margin-bottom: 5px;
+    }
+    
+
+    .gemBar1{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 203px;
+        margin: 0 auto;
+    }
+}

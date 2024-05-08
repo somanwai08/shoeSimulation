@@ -1,0 +1,76 @@
+
+@import url('https://fonts.cdnfonts.com/css/elgoc');
+.gemTab{
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: #d1a543 1px solid;
+
+
+    .subTitle{
+        padding-top: 29px;
+        font-family: "Elgoc",sans-serif;
+        font-size:20px ;
+        font-weight: 600;
+        color:#6e550F;
+    }
+
+
+}
+
+
+
+.ant-tabs{
+    font-family: "Montserrat", Sans-serif;
+    height: 423px;
+}
+
+
+.ant-tabs .ant-tabs-tab,
+.ant-tabs .ant-tabs-tab:hover{
+    color:#6E550F;
+}
+
+@media screen and (max-width:820px) {
+    .gemTab{
+        height:63vh;
+    }
+    .ant-tabs{
+         height: 55vh;
+
+        .ant-tabs-tab+.ant-tabs-tab {
+            margin: 0 0 0 9px;
+        }
+        
+        .ant-tabs-content-holder{
+            height:50vh;
+        }
+
+    }
+
+    
+
+    
+}
+
+
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+    color: #d1a543;
+    text-decoration: underline;
+}
+.ant-tabs .ant-tabs-ink-bar{
+    background-color: transparent!important;
+}
+.ant-tabs .ant-tabs-ink-bar{
+    background-color: transparent!important;
+}
+.ant-tabs >.ant-tabs-nav .ant-tabs-nav-wrap{
+    justify-content: center;
+}
+
+.ant-tabs-top >.ant-tabs-nav::before{
+    border-bottom: transparent;
+}
+
+.ant-tabs .ant-tabs-ink-bar{
+    background-color: transparent!important;
+}

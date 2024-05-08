@@ -1,23 +1,39 @@
-import logo from './logo.svg';
+
 import './App.css';
+import GemTab from './components/Legacy Gems/Gem Tab/gemTab';
+// import { Grid } from "antd";
+import { Col, Row } from 'antd'
+import FinalBag from './components/finalBag/fingalBag1/finalBag';
+import AphroditeTab from './components/APHRODITE/APHRODITE TAB/aphroditeTab';
+import { Footer } from 'antd/es/layout/layout';
+
+const requireContext=require.context('../src/assets/images/footer&header/',false)
+const headerNFooter = requireContext.keys().map(requireContext)
+
+
 
 function App() {
+
+
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img className="headerImg" src={headerNFooter[1]} />
+        
       </header>
+      <Row>
+      <Col span={8} className='leftColumn'><AphroditeTab></AphroditeTab></Col>
+      <Col span={8}><FinalBag></FinalBag></Col>
+      <Col span={8}><GemTab></GemTab></Col>
+    </Row>
+       
+       
+
+      <Footer>
+        <img src={headerNFooter[0]} />
+      </Footer>
+     
     </div>
   );
 }
