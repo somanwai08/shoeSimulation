@@ -1,16 +1,27 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 
-const requireContext = require.context('../../assets/images/real',false)
+const requireContext = require.context('../../assets/images/legacy',false)
 export const gemImages = requireContext.keys().map(requireContext)
 
-const requireContext1 = require.context('../../assets/images/real 2',false)
-export const gemImages1 = requireContext.keys().map(requireContext1)
+
+
+const requireContextKelly = require.context('../../assets/images/Kelly/',false)
+export const gemImagesKelly = requireContextKelly.keys().map(requireContextKelly)
+
+
+const requireContext1 = require.context('../../assets/images/legacy2',false)
+export const gemImages1 = requireContext1.keys().map(requireContext1)
 
 export const gemSlice = createSlice({
     name:'gem',
     initialState:{
         selectedGem:'Arctic 2 White Gold Alfalfa',
+        selectedKelly:{
+          selectedSide:'LEFT',
+          LEFT:'',
+          RIGHT:''
+        },
         selectedSeries:'Artist Series',
         artist:{
           gemGroup1:{
@@ -60,6 +71,16 @@ export const gemSlice = createSlice({
                {name:"Jazz 2 24K Green Tsavorite",src:gemImages[16]},
                {name:"Jazz 2 24K Red Garnet & Yellow Quartz 1",src:gemImages[18]},
                {name:"Jazz 2 24K Golden Orange Citrine 1",src:gemImages[14]},
+              ]
+            },
+            gemGroup6:{
+              title:"Kelly",
+              product:[
+               {name:"Kelly Orange",src:gemImagesKelly[0]},
+               {name:"Kelly Pink",src:gemImagesKelly[1]},
+               {name:"Kelly Red",src:gemImagesKelly[2]},
+               {name:"Kelly Skyblue",src:gemImagesKelly[3]},
+              
               ]
             },
       },
@@ -153,9 +174,21 @@ export const gemSlice = createSlice({
         },
       setSelectedSeries:(state,action)=>{
         state.selectedSeries=action.payload
+      },
+      setSelectedKellySide:(state,action)=>{
+        state.selectedKelly.selectedSide = action.payload
+      },
+      setSelectedKelly:(state,action)=>{
+        const {side,name}=action.payload
+        state.selectedKelly[side]=name
+      },
+      ResetKelly:(state)=>{
+        state.selectedKelly.selectedSide='LEFT'
+        state.selectedKelly.LEFT=''
+        state.selectedKelly.RIGHT=''
       }
     }
 })
 
-export const {setSelectedGem,setSelectedSeries} = gemSlice.actions
+export const {setSelectedGem,setSelectedSeries,setSelectedKellySide,setSelectedKelly,ResetKelly} = gemSlice.actions
 export default gemSlice.reducer

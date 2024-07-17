@@ -1,6 +1,7 @@
 import React from 'react'
 import './ArtistGemPanel.scss'
 import GemBar from '../../gem bar/gemBar'
+import KellyGemPanel from '../Kelly/KellyPanel'
 import { useSelector } from 'react-redux'
 
 export default function ArtistGemPanel() {
@@ -9,6 +10,7 @@ export default function ArtistGemPanel() {
     const gemGroup3=useSelector(state=>state.gem.artist.gemGroup3)
     const gemGroup4=useSelector(state=>state.gem.artist.gemGroup4)
     const gemGroup5=useSelector(state=>state.gem.artist.gemGroup5)
+    
   
      
   return (
@@ -17,7 +19,8 @@ export default function ArtistGemPanel() {
         <GemBar group={gemGroup2} series={'Artist Series'}></GemBar>
         <GemBar group={gemGroup3} series={'Artist Series'}></GemBar> 
         <GemBar group={gemGroup4} series={'Artist Series'}></GemBar>   
-        <GemBar group={gemGroup5} series={'Artist Series'}></GemBar>   
+        <GemBar group={gemGroup5} series={'Artist Series'}></GemBar> 
+        <KellyGemPanel></KellyGemPanel>  
     </div>
   )
 }

@@ -48,3 +48,81 @@
 .leftColumn{
   z-index: 3;
 }
+
+
+
+
+
+
+/* 控制desktop版本何時出現 */
+.desktop{
+  display: none;
+}
+@media screen and (min-width:992px){
+  .desktop{
+    display: block;
+  }
+}
+
+/* 控制tablet版本何時出現 */
+  .tablet{
+    display: none;
+  }
+@media  (min-width:576px) and (max-width:992px){
+      .tablet{
+        display:block;
+        width: 80%;
+        margin: 0 auto;
+      }
+      .tablet-upper{
+        height: 46vh;
+      }
+      .tablet-bottom{
+        height: 46vh;
+      }
+      .ant-layout-footer {
+        background-color: transparent;
+        padding: 30px 30px;
+      }
+      .shoes{
+        height: 66%;
+        width: 100%;
+      }
+      .shoes-heels{
+        height:34%;
+        width: 80%;
+        margin: 0 auto;
+      }
+      .bottom-left{
+        height:100%;
+      }
+      .bottom-right{
+        height:100%;
+      }
+      .shoes .finalBagContainer{
+        width:51%!important;
+      }
+}
+
+
+
+/* 控制mobile版本何時消失 */
+.mobile{
+  display:block;
+  margin: 0 auto;
+ }
+ .mobile-halfContainer{
+  height:50vh;
+}
+.mobile-upper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media  screen and (min-width:576px) {
+  .mobile{
+   display:none;
+  }
+
+}

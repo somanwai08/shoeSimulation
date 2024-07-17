@@ -1,13 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import gemReducer from './modules/gem'
-import bagReducer from './modules/bag'
-import bag from "./modules/bag";
+import shoeReducer from './modules/shoe'
+import shoe from "./modules/shoe";
 
 
 const store = configureStore({
     reducer:{
         gem:gemReducer,
-        bag:bag
+        shoe:shoe
     }
 })
 

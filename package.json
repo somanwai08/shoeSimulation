@@ -1,7 +1,7 @@
 {
-  "name": "aphrodite-sim",
+  "name": "mesh-sim",
   "version": "0.1.0",
-  "homepage": "harrods-test",
+  "homepage": "mesh-simulation",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+@media screen  and (max-width:675px){
+    .finalShoeContainer{
+        height: 73%;
+        width: 73%;
+        .finalBag{
+            position: relative;
+            .shoe{
+                position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+                // width: 400px;
+                width:100%
+            }
+        
+            .gem{
+                position: absolute;
+                left:50%;
+                transform: translateX(-50%);
+                // width: 400px;
+                width:100%
+            }
+            .woodHandle,.leftKelly,.rightKelly{
+              position: absolute;
+              left:50%;
+                transform: translateX(-50%);
+                // width: 400px;
+                width:100%
+            }
+        
+            
+            .gemName{
+                position: absolute;
+                top: 87%;
+                left: 50%;
+                transform: translateX(-50%);
+                
+            }
+            
+        
+        }
+      
+    
+        .ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover{
+            border: 1px solid #D1A543;
+            color:#D1A543;
+        }
+    
+       
+    }
+}
+
+@media  (min-width:576px) and (max-width:992px){
+            .finalShoeContainer{
+    width: 33%;
+    .finalBag{
+        position: relative;
+        .shoe{
+            position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+            width:100%
+
+        }
+    
+        .gem{
+            position: absolute;
+            left:50%;
+            transform: translateX(-50%);
+            width:100%
+        }
+        .woodHandle,.leftKelly,.rightKelly{
+          position: absolute;
+          left:50%;
+            transform: translateX(-50%);
+            width:100%
+        }
+    
+        
+        .gemName{
+            position: absolute;
+            top: 87%;
+            left: 50%;
+            transform: translateX(-50%);
+            
+        }
+        
+    
+    }
+  
+
+    .ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover{
+        border: 1px solid #D1A543;
+        color:#D1A543;
+    }
+
+   
+}
+}
+
+
+

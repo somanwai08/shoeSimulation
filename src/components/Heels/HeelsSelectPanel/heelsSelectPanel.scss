@@ -1,0 +1,37 @@
+
+
+.heels-pic{
+    padding: 10px;
+    position: relative;
+
+    .active{
+        border: 5px solid #d1a543;
+    }
+
+
+    .height-txt{
+        position: absolute;
+        bottom: 8%;
+        color:#d1a543;
+        left:50%;
+        transform: translate(-50%);
+    }
+}
+
+@media screen and (max-width:576px) {
+    .heels-pic{
+        padding-top:20px;
+        .heels-choice{
+            padding: 8px 0;
+        }
+    }
+
+}
+
+@media  (min-width:576px) and (max-width:992px){
+    
+        .heels-choice{
+            padding: 8px 0;
+        }
+    
+}

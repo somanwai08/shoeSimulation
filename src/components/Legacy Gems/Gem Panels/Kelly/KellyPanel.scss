@@ -1,0 +1,36 @@
+.KellyTab{
+    overflow: auto;
+    .heading{
+        color: #6e550f;
+        border-top: none;
+        font-size: 14px;
+    }
+
+    .ant-tabs-nav-list .ant-tabs-tab.ant-tabs-tab-active{
+        background-color: transparent;
+        font-weight: 600;
+        .ant-tabs-tab-btn{
+            color:#6e550f;
+        }
+    }
+    .ant-tabs-nav-list .ant-tabs-tab{
+        background-color: transparent;
+        .ant-tabs-tab-btn{
+            color:#6e550f;
+        }
+    }
+    .KellyTab1{
+        margin-top: 10px;
+    }
+
+    overflow-x: hidden;
+}
+
+.KellyTab::-webkit-scrollbar{
+    width: 8px;
+}
+
+.KellyTab::-webkit-scrollbar-thumb{
+    background-color: #DBC99D;
+    border-radius: 4px;
+}
