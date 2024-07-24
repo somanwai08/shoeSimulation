@@ -1,0 +1,190 @@
+
+@import url('https://fonts.cdnfonts.com/css/elgoc');
+.gemTab{
+    width: 95%;
+    margin: 0 auto;
+    border-bottom: #d1a543 1px solid;
+
+
+    .subTitle{
+        padding-top: 29px;
+        font-family: "Elgoc",sans-serif;
+        font-size:20px ;
+        font-weight: 600;
+        color:#6e550F;
+    }
+
+
+    .ant-tabs-nav-scroll{
+        &::-webkit-scrollbar{
+            width:3px;
+        }
+    }
+
+}
+
+
+
+// .ant-tabs{
+//     font-family: "Montserrat", Sans-serif;
+//     line-height: 0.4;
+//     height: 436px;
+//     margin-top: -5px;
+// }
+
+
+.tablet{
+    .main-Tab{
+        width:90%;
+        margin:0 auto;
+        .ant-tabs .ant-tabs-tab{
+            color:#6e550F
+        }
+        .ant-tabs-tab-btn{
+            color: #d1a543;
+            // 控制‘legacy’和‘classic’兩字的大小
+            font-size: 1rem;
+        }
+        
+    }
+}
+
+
+
+.ant-tabs-top >.ant-tabs-nav{
+    margin:0 0 7px 0;
+}
+// .ant-tabs >.ant-tabs-nav .ant-tabs-nav-list{
+//     width: 99%;
+//     justify-content: space-evenly;
+// }
+
+// .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+//     font-weight: 500;
+//     color:#d1a543;
+//     font-size: 1rem;
+// }
+.ant-tabs >.ant-tabs-nav .ant-tabs-nav-wrap{
+    justify-content: center;
+}
+.ant-tabs .ant-tabs-tab+.ant-tabs-tab{
+    margin:0 0 0 0;
+}
+
+.ant-tabs-top >.ant-tabs-nav::before{
+    border-bottom: transparent;
+}
+
+.ant-tabs .ant-tabs-ink-bar{
+    background-color: transparent!important;
+}
+
+
+.tablet{
+    .Legacy-Tab,.Classic-Tab{
+        .ant-tabs-nav-list{
+            width:99%;
+    
+            .ant-tabs-tab{
+                width:33%;
+                justify-content: center;
+                .ant-tabs-tab-btn{
+                    color:#d1a543;
+                    // 控制‘material’，‘artist’，‘Collaboration’字體的大小
+                    font-size:0.8rem;
+                    padding-top: 3px;
+                }
+                background-color: #FDFAF6;
+            }
+    
+            .ant-tabs-tab.ant-tabs-tab-active{
+                
+                background-color: #D1a543;
+                .ant-tabs-tab-btn{
+                    color:white;
+                }
+           }
+        }
+        
+    } 
+}
+
+
+
+@media screen and (max-width:576px){
+    .main-Tab{
+           
+    margin-top: -10px;
+    }
+    .Legacy-Tab,.Classic-Tab{
+        .ant-tabs-nav-list{
+            .ant-tabs-tab{
+                padding-top: 10px;
+            padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+// @media (min-width:576px) and (max-width:992px){
+//     .gemTab{
+//         height: 37vh !important;;
+//     }
+//     .ant-tabs{
+//          height: 55vh;
+
+//         .ant-tabs-tab+.ant-tabs-tab {
+//             margin: 0 0 0 0px;
+//         }
+        
+//         .ant-tabs-content-holder{
+//             height:50vh;
+//         }
+
+//     }
+//     .ant-tabs >.ant-tabs-nav .ant-tabs-nav-list{
+//         margin-bottom: 8px;
+//     margin-top: -4px;
+//     }
+// }
+
+@media (min-width:576px) and (max-width:991px){
+    .tablet{
+        .gemTab{
+            height: 37vh !important;
+            .ant-tabs{
+                height: 55vh;
+       
+               .ant-tabs-tab+.ant-tabs-tab {
+                   margin: 0 0 0 0px;
+               }
+               
+               .ant-tabs-content-holder{
+                   height:50vh;
+               }
+       
+           }
+           .ant-tabs >.ant-tabs-nav .ant-tabs-nav-list{
+               margin-bottom: 8px;
+               margin-top: -4px;
+               .ant-tabs-tab-active{
+                #rc-tabs-14-tab-1,#rc-tabs-14-tab-2{
+                    color:#d1a543;
+                    font-weight: 500;
+                   }
+               }
+               
+           }
+        }
+    }
+        
+       
+    }
+
+
+@media (min-width:992px){
+    #MobileKellyGemTab{
+        display: none;
+    }
+}
+

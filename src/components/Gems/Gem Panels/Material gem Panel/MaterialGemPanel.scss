@@ -1,0 +1,20 @@
+.MaterialTab{
+    height:357px;
+    overflow: auto;
+}
+
+.MaterialTab::-webkit-scrollbar{
+    width: 3px;
+}
+
+.MaterialTab::-webkit-scrollbar-thumb{
+    background-color: #DBC99D;
+    border-radius: 4px;
+}
+
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .MaterialTab{
+        height: 21vh;
+    }
+}

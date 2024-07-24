@@ -1,0 +1,33 @@
+
+    
+.gem{
+    position: relative;
+    display: inline-block;
+    
+        display: inline-block;
+        img{
+            display: block;
+            width:55px;
+        }
+   
+    
+    .indicator {
+        position: absolute;
+        left: 50%;
+        bottom: -8px;
+        transform: translateX(-50%);
+        width: 5px;
+        height: 5px;
+        background-color: #d1a543;
+        border-radius: 50%;
+        display: inline-block;
+        opacity: 0;
+      }
+    
+      &.active .indicator {
+        opacity: 1;
+      }
+}
+    
+
+

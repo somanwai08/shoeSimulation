@@ -5,13 +5,26 @@
     position: relative;
 
     .active{
-        border: 5px solid #d1a543;
+
+        &.indicator {
+            position: absolute;
+            left: 50%;
+            bottom: -8px;
+            transform: translateX(-50%);
+            width: 5px;
+            height: 5px;
+            background-color: #d1a543;
+            border-radius: 50%;
+            display: inline-block;
+          }
     }
+
+    
 
 
     .height-txt{
         position: absolute;
-        bottom: 8%;
+        bottom: -5%;
         color:#d1a543;
         left:50%;
         transform: translate(-50%);
@@ -29,9 +42,57 @@
 }
 
 @media  (min-width:576px) and (max-width:992px){
+    .Heels-section{
+        height:37vh;
+        .heels-pic{
+            .heels-choice{
+                padding: 8px 0;
+               
+            }
+        }
+       
+        
+    }
+    .borderBottom{
+        border-bottom: 1px solid #d1a543;
+    }
+
     
+    
+
+}
+
+@media  (min-width:992px) {
+
+    .Heels-section{
+        .heading{
+            border-top: none;
+            font-size: 24px;
+        }
+
         .heels-choice{
             padding: 8px 0;
+            .active{
+
+                &.indicator {
+                    // position: absolute;
+                    // left: 50%;
+                    bottom: 4px;
+                    // transform: translateX(-50%);
+                    // width: 5px;
+                    // height: 5px;
+                    // background-color: #d1a543;
+                    // border-radius: 50%;
+                    // display: inline-block;
+                  }
+            }
+            .height-txt{
+                display: none;
+            }
         }
+        
+    } 
+
+
     
 }

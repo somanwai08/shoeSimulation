@@ -1,0 +1,18 @@
+.scrollable{
+    display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #d1a543;
+  border-bottom: 1px solid #d1a543;;
+
+  & > * {
+    flex-shrink: 0;
+    // margin: 0 16px;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,48 @@
+.KellyTab{
+    overflow: auto;
+    .heading{
+        color: #6e550f;
+        border-top: none;
+        font-size: 20px;
+    }
+
+    
+   
+
+
+    .KellyTab1{
+        margin-top: 10px;
+        .ant-tabs-nav-list {
+            justify-content: center;
+            .ant-tabs-tab {
+              justify-content: center;
+              background-color: #FDFAF6;
+              width: 89px;
+              .ant-tabs-tab-btn {
+                color: #6e550f;
+              }
+          
+              &.ant-tabs-tab-active {
+                background-color: #d1a543;
+                font-weight: 600;
+                width:89px;
+          
+                .ant-tabs-tab-btn {
+                  color: #6e550f !important;
+                }
+              }
+            }
+          }
+    }
+
+    overflow-x: hidden;
+}
+
+.KellyTab::-webkit-scrollbar{
+    width: 8px;
+}
+
+.KellyTab::-webkit-scrollbar-thumb{
+    background-color: #DBC99D;
+    border-radius: 4px;
+}

@@ -1,11 +1,11 @@
-import './finalShoe1.scss'
+import './shoeCloseUp.scss'
 import React, { useEffect, useState } from 'react'
 import {setSelectedKellySide} from '../../Store/modules/gem.js'
 import { useSelector,useDispatch } from 'react-redux'
 // 批量引入gem圖片
 import { gemImages1 } from '../../Store/modules/gem.js'
 // 引入鞋圖片
-import shoeImg from '../../assets/images/shoe/Marlene Mesh 75 24K Gold White Calf-forWebUse.jpg'
+import shoeImg from '../../assets/images/shoe/Marlene Mesh 75 24K Gold White Calf CloseUp-forWebUse.jpg'
 
 
 
@@ -18,7 +18,7 @@ const gemImages2 = requireContext3.keys().map(requireContext3)
 
 
 
-export default function Finalshoe1() {
+export default function ShoeCloseUp() {
     const selectedGem=useSelector(state=>state.gem.selectedGem)
     const selectedKelly = useSelector(state=>state.gem.selectedKelly)
     const [gemPic,setGemPic]=useState(gemImages1[0])

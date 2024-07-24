@@ -24,9 +24,6 @@
   height: 110px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -62,6 +59,22 @@
   .desktop{
     display: block;
   }
+
+  .desktop .desktop-upper{
+    height:40vh;
+    min-height: 430px;
+    /* background-color: purple; */
+    width:50%;
+    max-width: 754px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .desktop .desktop-upper .upper-middle{
+    padding-top: 37px;
+  }
+  .desktop-upper > .ant-col{
+    height:100%;
+  }
 }
 
 /* 控制tablet版本何時出現 */
@@ -76,6 +89,8 @@
       }
       .tablet-upper{
         height: 46vh;
+        min-height: 500px;
+        max-width: 680px;
       }
       .tablet-bottom{
         height: 46vh;
@@ -87,19 +102,23 @@
       .shoes{
         height: 66%;
         width: 100%;
+        margin-top: 4%;
       }
       .shoes-heels{
-        height:34%;
+        height:25%;
         width: 80%;
         margin: 0 auto;
+        justify-content: space-evenly;
       }
       .bottom-left{
         height:100%;
+        padding-right: 10px;
       }
       .bottom-right{
         height:100%;
+        padding-left: 30px;
       }
-      .shoes .finalBagContainer{
+      .shoes .finalShoeContainer{
         width:51%!important;
       }
 }

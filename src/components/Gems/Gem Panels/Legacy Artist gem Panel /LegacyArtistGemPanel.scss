@@ -1,0 +1,29 @@
+.ArtistTab{
+    height:100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+.ArtistTab::-webkit-scrollbar{
+    width: 3px;
+}
+
+.ArtistTab::-webkit-scrollbar-thumb{
+    background-color: #DBC99D;
+    
+    border-radius: 4px;
+}
+
+
+@media screen and (max-width:576px){
+    .ArtistTab{
+        height: 48vh;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .ArtistTab{
+        height: 22vh;
+    }
+}

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.gemBar{
+    text-align: center;
+    
+    h4{
+        font-family: "Elgoc",sans-serif;
+        font-weight: 300;
+        color:#6E550F;
+        margin-bottom: 7px;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    @media (min-width:992px) {
+        h4{
+            margin-top: 0;
+        }
+    }
+    
+     // gem折疊
+    .gemBar1{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 100%;
+        
+        .gem{
+            margin-right: 11px;
+            margin-left: 11px;
+            margin-bottom: 11px;
+        }
+    }
+
+    // gem不折疊
+    .gemBar2{
+        display:flex;
+        justify-content: center;
+        // flex-wrap: wrap;
+        // width: 203px;
+        margin: 0 auto;
+        .gem{
+            // flex:1;
+            margin-right: 10px;
+        }
+        .gem:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+
+.border{
+    padding-right: 25px;
+    padding-left: 25px;
+    border-right: 1px solid gray;
+}
+.border:last-child{
+    
+    border-right: none;
+}
