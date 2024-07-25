@@ -1,5 +1,30 @@
-.KellyPage{
 
-    width: 100%;
-    margin-top: 60px;
+
+@media (min-width:992px) and (max-width:1200px){
+    .KellyPage{
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+
+@media (min-width:1201px) and (max-width:1300px){
+    .KellyPage{
+        width: 100%;
+        margin-top: 84px;
+    }
+}
+
+@media (min-width:1301px) and (max-width:1500px){
+    .KellyPage{
+        width: 100%;
+        margin-top: 124px;
+    }
+}
+
+@media (min-width:1501px) and (max-width:3000px){
+    .KellyPage{
+        width: 100%;
+        margin-top: 180px;
+    }
 }

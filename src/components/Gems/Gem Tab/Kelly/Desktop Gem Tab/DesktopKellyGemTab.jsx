@@ -19,26 +19,7 @@ export default function DesktopKellyGemTab() {
     const onChange = (key) => {
     
       };
-      
-
-      const items2=[
-        {
-          key:'1',
-          label:'Artist',
-          children:<LegacyArtistGemPanel scrollable={true}></LegacyArtistGemPanel>
-        },
-        {
-          key:'2',
-          label:'Material',
-          children:<MaterialGemPanel scrollable={true}></MaterialGemPanel>
-        },
-        {
-          key:'3',
-          label:'Collaboration',
-          children:<CollabrationGemPanel scrollable={true}></CollabrationGemPanel>
-        }
-        
-      ]
+     
 
      
 
@@ -46,11 +27,10 @@ export default function DesktopKellyGemTab() {
                
     <div className='DeskGemTab' id='DeskKellyGemTab'>
       <Headline title='KELLY'></Headline>
-      {/* <Tabs
-         items={items2} className='main-Tab'/> */}
-         <KellyGemPanel></KellyGemPanel>
      
-       
+         <div className='main-Tab'>
+          <KellyGemPanel></KellyGemPanel>
+         </div>
     </div>
   )
 }

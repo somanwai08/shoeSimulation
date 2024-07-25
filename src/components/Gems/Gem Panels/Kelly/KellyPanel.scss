@@ -11,27 +11,34 @@
 
 
     .KellyTab1{
-        margin-top: 10px;
+        // margin-top: 10px;
         .ant-tabs-nav-list {
             justify-content: center;
+            line-height: 0.3;
+            
             .ant-tabs-tab {
               justify-content: center;
               background-color: #FDFAF6;
-              width: 89px;
+              width: 120px!important;
               .ant-tabs-tab-btn {
-                color: #6e550f;
+                color: #d1a543;
               }
           
               &.ant-tabs-tab-active {
                 background-color: #d1a543;
                 font-weight: 600;
-                width:89px;
+                width:120px;
+                
           
                 .ant-tabs-tab-btn {
-                  color: #6e550f !important;
+                  color:white;
                 }
               }
             }
+          }
+          .scrollable{
+            padding-top: 32px;
+            padding-bottom: 32px;
           }
     }
 

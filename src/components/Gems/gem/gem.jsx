@@ -10,6 +10,7 @@ export default function Gem(props) {
        const selectedKellySide = useSelector(state=>state.gem.selectedKelly.selectedSide)
        const selectedKelly = useSelector(state=>state.gem.selectedKelly)
        const {name,src,series,side}=props
+
        const isActive=()=>{
                  if(side===undefined&&name===selectedGem){
                   // 如果side屬性是undefine，就不是選中Kelly Gem，只要name等於selectedGem，就是active
