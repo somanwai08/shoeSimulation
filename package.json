@@ -4,6 +4,7 @@
   "homepage": "mesh-simulation",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^5.4.0",
     "@reduxjs/toolkit": "^2.2.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -11,6 +12,7 @@
     "antd": "^5.16.5",
     "classnames": "^2.2.6",
     "html2canvas": "^1.4.1",
+    "mobile-detect": "^1.4.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-redux": "^9.1.1",

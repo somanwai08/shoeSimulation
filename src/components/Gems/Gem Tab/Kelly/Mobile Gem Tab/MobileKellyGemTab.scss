@@ -42,26 +42,6 @@
 
 
 
-.ant-tabs-top >.ant-tabs-nav{
-    margin:0 0 7px 0;
-}
-
-.ant-tabs >.ant-tabs-nav .ant-tabs-nav-wrap{
-    justify-content: center;
-}
-.ant-tabs .ant-tabs-tab+.ant-tabs-tab{
-    margin:0 0 0 0;
-}
-
-.ant-tabs-top >.ant-tabs-nav::before{
-    border-bottom: transparent;
-}
-
-.ant-tabs .ant-tabs-ink-bar{
-    background-color: transparent!important;
-}
-
-
 .tablet{
     .Legacy-Tab,.Classic-Tab{
         .ant-tabs-nav-list{
@@ -108,31 +88,11 @@
     }
 }
 
-// @media (min-width:576px) and (max-width:992px){
-//     .gemTab{
-//         height: 37vh !important;;
-//     }
-//     .ant-tabs{
-//          height: 55vh;
 
-//         .ant-tabs-tab+.ant-tabs-tab {
-//             margin: 0 0 0 0px;
-//         }
-        
-//         .ant-tabs-content-holder{
-//             height:50vh;
-//         }
-
-//     }
-//     .ant-tabs >.ant-tabs-nav .ant-tabs-nav-list{
-//         margin-bottom: 8px;
-//     margin-top: -4px;
-//     }
-// }
 
 @media (min-width:576px) and (max-width:991px){
     .tablet{
-        .gemTab{
+        #MobileKellyGemTab{
             height: 37vh !important;
             .ant-tabs{
                 height: 55vh;
@@ -146,14 +106,12 @@
                }
        
            }
-           .ant-tabs >.ant-tabs-nav .ant-tabs-nav-list{
+          .ant-tabs >.ant-tabs-nav .ant-tabs-nav-list{
                margin-bottom: 8px;
-               margin-top: -4px;
+            //    margin-top: -4px;
                .ant-tabs-tab-active{
-                #rc-tabs-14-tab-1,#rc-tabs-14-tab-2{
-                    color:#d1a543;
+                color:#d1a543;
                     font-weight: 500;
-                   }
                }
                
            }

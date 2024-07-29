@@ -1,6 +1,5 @@
 import './heelsShowPanel.scss'
 import React from 'react'
-import { Image,Row } from 'antd'
 import { useSelector } from 'react-redux';
 
 // 批量引入heel圖片

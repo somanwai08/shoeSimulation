@@ -17,6 +17,8 @@ export default function KellyGemPanel() {
     
     const dispatch=useDispatch()
 
+    // 獲取視口寬度
+    const windowWidth = window.innerWidth
     
 
     const setKellySide = (e)=>{
@@ -33,8 +35,7 @@ useEffect(()=>{
      
   return (
     <div className='KellyTab'>
-
-        <Tabs
+      {windowWidth<992?<Tabs
               activeKey={activeKey}
               centered
               className='KellyTab1'
@@ -43,7 +44,19 @@ useEffect(()=>{
                 return {
                   label: item,
                   key: String(i),
-                  // children: <GemBar group={gemGroup1} series={'Artist Series'} side={tabArr[i]}></GemBar>,
+                  children: <GemBar group={gemGroup1} series={'Artist Series'} side={tabArr[i]}></GemBar>,
+                
+                };
+              })}
+            />:<Tabs
+              activeKey={activeKey}
+              centered
+              className='KellyTab1'
+              onChange={setKellySide}
+              items={tabArr.map((item, i) => {
+                return {
+                  label: item,
+                  key: String(i),
                   children:<ScrollableTabContent1 
                             groups={[gemGroup1]} 
                             series={'Artist Series'} side={tabArr[i]}
@@ -54,7 +67,8 @@ useEffect(()=>{
 
                 };
               })}
-            />
+            />}
+   
     </div>
   )
 }

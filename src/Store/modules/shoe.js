@@ -4,11 +4,8 @@ import { createSlice } from "@reduxjs/toolkit";
 export const shoeSlice = createSlice({
     name:'shoe',
     initialState:{
-        selectedMaterial:'Box Calf Maia Calf',
-        selectedSize:'MM',
-        selectedColor:'Gold White',
-        selectedHandle:'Normal',
-        selectedHeel:'20MM'
+        selectedHeel:'20MM',
+        selectedView:'Final'
 
         
 
@@ -20,10 +17,12 @@ export const shoeSlice = createSlice({
       setSelectedHeel:(state,action)=>{
         state.selectedHeel=action.payload
       },
+      setSelectedView:(state,action)=>{
+        state.selectedView=action.payload
+      }
     }
 })
 
 export const { 
-  // setSelectedSize,setSelectedMaterial,setSelectedColor,
-  setSelectedHeel } = shoeSlice.actions
+  setSelectedHeel,setSelectedView } = shoeSlice.actions
 export default shoeSlice.reducer

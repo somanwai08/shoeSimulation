@@ -15,12 +15,12 @@ export default function Gem(props) {
                  if(side===undefined&&name===selectedGem){
                   // 如果side屬性是undefine，就不是選中Kelly Gem，只要name等於selectedGem，就是active
                   return true
-                 }else if(side!='undefined'&&side==='LEFT'&&name===selectedKelly.LEFT){
+                 }else if(side!==undefined&&side==='LEFT'&&name===selectedKelly.LEFT){
                   
                   // 如果side屬性不是是undefine，就代表選中Kelly Gem
                   // 這時如果選中LEFT panel，而且名稱和selectedKelly.LEFT一樣，嗰粒gem就係active
                   return true
-                 }else if(side!='undefined'&&side==='RIGHT'&&name===selectedKelly.RIGHT){
+                 }else if(side!==undefined&&side==='RIGHT'&&name===selectedKelly.RIGHT){
                   
                   // 如果side屬性不是是undefine，就代表選中Kelly Gem
                   // 這時如果選中RIGHT panel，而且名稱和selectedKelly.RIGHT一樣，嗰粒gem就係active

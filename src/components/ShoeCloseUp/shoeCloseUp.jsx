@@ -24,12 +24,12 @@ export default function ShoeCloseUp() {
     const [gemPic,setGemPic]=useState(gemImages1[0])
     const [leftKellyPic,setLeftKellyPic]=useState('')
     const [rightKellyPic,setRightKellyPic]=useState('')
-    const [hdPic,setWDPic]=useState('')
-    const selectedMaterial=useSelector(state=>state.shoe.selectedMaterial)
-    const selectedSize=useSelector(state=>state.shoe.selectedSize)
-    const selectedColor=useSelector(state=>state.shoe.selectedColor)
-    const selectedHandle=useSelector(state=>state.shoe.selectedHandle)
-    const pathClip=`${selectedSize}_${selectedMaterial}_${selectedColor}`
+    // const [hdPic,setWDPic]=useState('')
+    // const selectedMaterial=useSelector(state=>state.shoe.selectedMaterial)
+    // const selectedSize=useSelector(state=>state.shoe.selectedSize)
+    // const selectedColor=useSelector(state=>state.shoe.selectedColor)
+    // const selectedHandle=useSelector(state=>state.shoe.selectedHandle)
+    // const pathClip=`${selectedSize}_${selectedMaterial}_${selectedColor}`
     const dispatch=useDispatch()
     
     
@@ -63,7 +63,7 @@ export default function ShoeCloseUp() {
       }
         
      
-    },[selectedGem,selectedKelly])
+    },[selectedGem,selectedKelly,dispatch])
 
 
 
@@ -72,7 +72,7 @@ export default function ShoeCloseUp() {
     <div className='finalShoeContainer'>
       <div className='finalBag'>
           <img className='shoe' src={shoeImg} alt='' />
-          <img className='woodHandle' src={hdPic} alt=''/>
+          {/* <img className='woodHandle' src={hdPic} alt=''/> */}
           <img className='gem' src={gemPic} alt='' />
           <img className='leftKelly' src={leftKellyPic} alt='' />
           <img className='rightKelly' src={rightKellyPic} alt='' />

@@ -80,6 +80,17 @@ export const gemSlice = createSlice({
                {name:"Kelly Pink",src:gemImagesKelly[1]},
                {name:"Kelly Red",src:gemImagesKelly[2]},
                {name:"Kelly Skyblue",src:gemImagesKelly[3]},
+               {name:"Kelly Skyblue",src:gemImagesKelly[4]},
+               {name:"Kelly Skyblue",src:gemImagesKelly[5]},
+               {name:"Kelly Skyblue",src:gemImagesKelly[6]},
+               {name:"Kelly Skyblue",src:gemImagesKelly[7]},
+               {name:"Kelly Skyblue",src:gemImagesKelly[8]},
+               {name:"Kelly Skyblue",src:gemImagesKelly[9]},
+               {name:"Kelly Skyblue",src:gemImagesKelly[10]},
+               {name:"Kelly Skyblue",src:gemImagesKelly[11]},
+               {name:"Kelly Skyblue",src:gemImagesKelly[12]},
+               {name:"Kelly Skyblue",src:gemImagesKelly[13]},
+               {name:"Kelly Skyblue",src:gemImagesKelly[14]},
               
               ]
             },

@@ -46,7 +46,7 @@ export default function HeelsSelectPanel(props) {
         })
          
 
-        return <Col xs={24} sm={12} lg={24}className='heels-choice'>
+        return <Col key={i} xs={24} sm={24} lg={24}className='heels-choice'>
         <a >
           <Image
               width={'90%'}

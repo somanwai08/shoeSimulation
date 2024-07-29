@@ -1,7 +1,6 @@
 import React from 'react'
 import './LegacyArtistGemPanel.scss'
 import GemBar from '../../gem bar/gemBar'
-import KellyGemPanel from '../Kelly/KellyPanel'
 import { useSelector } from 'react-redux'
 import ScrollableTabContent1 from '../../ScrollableTabContent/ScrollableTabContent'
 

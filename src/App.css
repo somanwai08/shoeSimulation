@@ -63,7 +63,6 @@
   .desktop .desktop-upper{
     height:40vh;
     min-height: 430px;
-    /* background-color: purple; */
     width:50%;
     max-width: 754px;
     margin: 0 auto;
@@ -75,51 +74,81 @@
   .desktop-upper > .ant-col{
     height:100%;
   }
+  .footer{
+    justify-content:space-between ;
+  }
+  .footer .footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items:end;
+  }
+  .mobile-logo{
+    display: none;
+  }
 }
 
 /* 控制tablet版本何時出現 */
   .tablet{
     display: none;
   }
-@media  (min-width:576px) and (max-width:992px){
+@media  (min-width:576px) and (max-width:991px){
       .tablet{
         display:block;
         width: 80%;
         margin: 0 auto;
       }
       .tablet-upper{
-        height: 46vh;
-        min-height: 500px;
+        height:30vh;
+        min-height: 400px;
         max-width: 680px;
       }
       .tablet-bottom{
-        height: 46vh;
+        height: 40vh;
       }
       .ant-layout-footer {
         background-color: transparent;
-        padding: 30px 30px;
+        padding: 0px 85px;
+        margin-top: -38px;
       }
       .shoes{
-        height: 66%;
-        width: 100%;
-        margin-top: 4%;
+        margin-top: 5%;
       }
       .shoes-heels{
-        height:25%;
+        height:75%;
         width: 80%;
-        margin: 0 auto;
+        margin: auto 0;
         justify-content: space-evenly;
       }
+      .shoes-heels .finalShoeContainer{
+        width:60%;
+        border-bottom: 1px solid #d1a543;
+      }
+      .shoes-heels .heelShowContainer{
+        width: 60%;
+      }
+      .shoes-heels 
       .bottom-left{
         height:100%;
-        padding-right: 10px;
+        padding-right: 5px;
       }
       .bottom-right{
         height:100%;
-        padding-left: 30px;
+        padding-left: 10px;
       }
       .shoes .finalShoeContainer{
-        width:51%!important;
+        width: 60%;
+        margin: 0 30%;
+      }
+      .footer{
+        justify-content: space-between;
+      }
+      .footer .footer-logo{
+        display: flex;
+        justify-content: center;
+        align-items:end;
+      }
+      .Button-Wrap{
+        vertical-align: top;
       }
 }
 
@@ -144,4 +173,14 @@
    display:none;
   }
 
+}
+
+
+/* 讓選中tab下方不出現藍色bar */
+.ant-tabs-top >.ant-tabs-nav::before{
+  border-bottom: transparent;
+}
+/* 讓選中tab下方不出現藍色bar */
+.ant-tabs .ant-tabs-ink-bar{
+  background-color: transparent!important;
 }

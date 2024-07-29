@@ -53,3 +53,29 @@
     background-color: #DBC99D;
     border-radius: 4px;
 }
+
+@media (min-width:675px) and (max-width:992px){
+  #MobileKellyGemTab{
+    .KellyTab{
+      .KellyTab1{
+        .gemBar{
+          .gemBar1{
+          // 有新相後應該要調整
+            width:82%;
+            // 有新相後應該要調整
+            justify-content: space-between;
+            .gem{
+              // 有新相後應該要調整
+              margin-bottom: 20px;
+              img{
+              // 有新相後應該要調整
+                width:50px;
+              }
+            }
+          }
+        }
+      }
+     }
+  }
+   
+}
