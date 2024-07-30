@@ -12,16 +12,10 @@ export const gemImages1 = requireContext1.keys().map(requireContext1)
 
 
 
-export default function HeelsSelectPanel(props) {
-  const {borderBottom}=props
+export default function HeelsSelectPanel() {
+
     const [selectedPic,setSelectedPic]=useState(0)
     const dispatch = useDispatch()
-    const myClass = classnames({
-      'Heels-section':true,
-      'borderBottom':borderBottom?true:false
-    })
-
-    
 
         const changeHeels=(key,height,color)=>{
             return()=>{
@@ -46,10 +40,10 @@ export default function HeelsSelectPanel(props) {
         })
          
 
-        return <Col key={i} xs={24} sm={24} lg={24}className='heels-choice'>
+        return <Col key={i} xs={24} sm={8} lg={24}className='heels-choice'>
         <a >
           <Image
-              width={'90%'}
+              width={'60%'}
               preview={false}
               onClick={changeHeels(i,height,color)}
               key={i}
@@ -64,8 +58,8 @@ export default function HeelsSelectPanel(props) {
 
 
   return (
-    <div className={myClass}>
-      <Headline title='HEELS'></Headline>
+    <div className='Heels-section'>
+      <Headline title='HEELS' borderTop={false}></Headline>
         <Row className='heels-pic' >
            
             {heelsArr}

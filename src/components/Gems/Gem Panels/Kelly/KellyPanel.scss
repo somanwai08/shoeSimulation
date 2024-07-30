@@ -19,7 +19,8 @@
             .ant-tabs-tab {
               justify-content: center;
               background-color: #FDFAF6;
-              width: 120px!important;
+              width: 95px!important;
+              padding: 9px 0;
               .ant-tabs-tab-btn {
                 color: #d1a543;
               }
@@ -54,14 +55,14 @@
     border-radius: 4px;
 }
 
-@media (min-width:675px) and (max-width:992px){
+@media (min-width:576px) and (max-width:992px){
   #MobileKellyGemTab{
     .KellyTab{
       .KellyTab1{
         .gemBar{
           .gemBar1{
           // 有新相後應該要調整
-            width:82%;
+            width:66%;
             // 有新相後應該要調整
             justify-content: space-between;
             .gem{
@@ -69,7 +70,7 @@
               margin-bottom: 20px;
               img{
               // 有新相後應該要調整
-                width:50px;
+                width:38px;
               }
             }
           }

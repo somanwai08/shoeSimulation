@@ -2,7 +2,7 @@
 
 
 
-@media screen  and (max-width:675px){
+@media screen  and (max-width:576px){
     .finalShoeContainer{
         height: 73%;
         width: 73%;
@@ -55,6 +55,7 @@
     width: 23%;
     .finalBag{
         position: relative;
+        margin-top: -18px;
         .shoe{
             position: absolute;
         left: 50%;

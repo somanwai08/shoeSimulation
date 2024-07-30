@@ -33,7 +33,7 @@
 
 @media screen and (max-width:576px) {
     .heels-pic{
-        padding-top:20px;
+        padding: 0;
         .heels-choice{
             padding: 8px 0;
         }
@@ -43,19 +43,22 @@
 
 @media  (min-width:576px) and (max-width:992px){
     .Heels-section{
-        height:37vh;
+        height:17vh;
+        margin-top: 9px;
         .heels-pic{
+            margin-top: -22px;
             .heels-choice{
                 padding: 8px 0;
                
+            }
+            .height-txt{
+                bottom: -16%;
             }
         }
        
         
     }
-    .borderBottom{
-        border-bottom: 1px solid #d1a543;
-    }
+    
 
     
     

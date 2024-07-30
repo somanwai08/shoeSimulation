@@ -6,6 +6,7 @@ export const gemImages = requireContext.keys().map(requireContext)
 
 
 
+
 const requireContextKelly = require.context('../../assets/images/Kelly/',false)
 export const gemImagesKelly = requireContextKelly.keys().map(requireContextKelly)
 
@@ -35,10 +36,10 @@ export const gemSlice = createSlice({
             gemGroup2:{
               title:"SHADOW IV",
               product:[
-               {name:"Shadow IV 24K & White Gold 214A",src:gemImages[32]},
-               {name:"Shadow IV Green & White Gold 214B",src:gemImages[33]},
-               {name:"Shadow IV Moon & White Gold 209B",src:gemImages[34]},
-               {name:"Shadow IV White & 24K Gold 209A",src:gemImages[35]},
+               {name:"Shadow IV 24K & White Gold 214A",src:gemImages[29]},
+               {name:"Shadow IV Green & White Gold 214B",src:gemImages[30]},
+               {name:"Shadow IV Moon & White Gold 209B",src:gemImages[31]},
+               {name:"Shadow IV White & 24K Gold 209A",src:gemImages[32]},
               ]
             },
             gemGroup3:{
@@ -65,12 +66,9 @@ export const gemSlice = createSlice({
             gemGroup5:{
               title:"JAZZ 2",
               product:[
-               {name:"Jazz 2 24K Golden Orange Citrine",src:gemImages[15]},
-               {name:"Jazz 2 24K Pink Morganite",src:gemImages[17]},
-               {name:"Jazz 2 24K Red Garnet & Yellow Quartz",src:gemImages[19]},
-               {name:"Jazz 2 24K Green Tsavorite",src:gemImages[16]},
-               {name:"Jazz 2 24K Red Garnet & Yellow Quartz 1",src:gemImages[18]},
-               {name:"Jazz 2 24K Golden Orange Citrine 1",src:gemImages[14]},
+               {name:"Jazz 2 24K Golden Orange Citrine",src:gemImages[14]},
+               {name:"Jazz 2 24K Red Garnet & Yellow Quartz",src:gemImages[16]},
+               {name:"Jazz 2 24K Green Tsavorite",src:gemImages[15]},
               ]
             },
             gemGroup6:{
@@ -99,50 +97,50 @@ export const gemSlice = createSlice({
             gemGroup1:{
                 title:"SONNET",
                 product:[
-                 {name:"Sonnet",src:gemImages[40]},
+                 {name:"Sonnet",src:gemImages[37]},
                 ]
               },
               gemGroup2:{
                 title:"PURE 3",
                 product:[
-                 {name:"Pure 3 24K & White Gold",src:gemImages[29]}
+                 {name:"Pure 3 24K & White Gold",src:gemImages[26]}
                 ]
               },
               gemGroup3:{
                 title:"PACIFIC PEARL",
                 product:[
-                 {name:"Pacific Pearl White Gold, Gold & Black Pearl, Abalone",src:gemImages[28]},
+                 {name:"Pacific Pearl White Gold, Gold & Black Pearl, Abalone",src:gemImages[25]},
                 ]
               },
               gemGroup4:{
                 title:"LANTERN",
                 product:[
-                 {name:"Lantern 24K & White Gold, Golden Orange Citrine",src:gemImages[23]},
-                 {name:"Lantern 24K Gold White, Gold & Black Pearls",src:gemImages[24]},
-                 {name:"Lantern Grey Gold Pink Pearls",src:gemImages[25]},
+                 {name:"Lantern 24K & White Gold, Golden Orange Citrine",src:gemImages[20]},
+                 {name:"Lantern 24K Gold White, Gold & Black Pearls",src:gemImages[21]},
+                 {name:"Lantern Grey Gold Pink Pearls",src:gemImages[22]},
                 ]
               },
               gemGroup5:{
                 title:"ZOHIKO LACQUER",
                 product:[
-                 {name:"Lacquer 24K Gold Burmese Green & Ice Jade",src:gemImages[21]},
-                 {name:"Lacquer Moon Gold Rose Quartz",src:gemImages[22]},
-                 {name:"Lacquer 24K Gold 209C",src:gemImages[20]},
+                 {name:"Lacquer 24K Gold Burmese Green & Ice Jade",src:gemImages[18]},
+                 {name:"Lacquer Moon Gold Rose Quartz",src:gemImages[19]},
+                 {name:"Lacquer 24K Gold 209C",src:gemImages[17]},
                 ]
               },
               gemGroup6:{
                 title:"MARMORINO T. ANDO",
                 product:[
-                 {name:"Marmorino Moon Gold Black Pearls",src:gemImages[27]},
-                 {name:"Marmorino 24K Gold 209D",src:gemImages[26]},
+                 {name:"Marmorino Moon Gold Black Pearls",src:gemImages[24]},
+                 {name:"Marmorino 24K Gold 209D",src:gemImages[23]},
                 ]
               },
               gemGroup7:{
                 title:"SIXTY-SIX MARMORINO",
                 product:[
-                 {name:"Sixty-Six Marmorino 24K & White Gold Vanilla Sky",src:gemImages[37]},
-                 {name:"Sixty-Six Marmorino Green & Grey Gold Jade",src:gemImages[38]},
-                 {name:"Sixty-Six Marmorino 24K & Grey Gold Pewter",src:gemImages[36]},
+                 {name:"Sixty-Six Marmorino 24K & White Gold Vanilla Sky",src:gemImages[34]},
+                 {name:"Sixty-Six Marmorino Green & Grey Gold Jade",src:gemImages[35]},
+                 {name:"Sixty-Six Marmorino 24K & Grey Gold Pewter",src:gemImages[33]},
                  {name:"Sixty-Six Marmorino White & Moon Gold Emerald",src:gemImages[39]},
                 ]
               },
@@ -151,26 +149,25 @@ export const gemSlice = createSlice({
             gemGroup1:{
                 title:"PUTMAN",
                 product:[
-                 {name:"Putman Au750 3N Yellow Gold Onyx, Lapis and Topaz",src:gemImages[30]},
-                 {name:"Putman Au750 3N Yellow Gold",src:gemImages[31]},
+                 {name:"Putman Au750 3N Yellow Gold Onyx, Lapis and Topaz",src:gemImages[27]},
+                 {name:"Putman Au750 3N Yellow Gold",src:gemImages[28]},
                 ]
               },
               gemGroup2:{
                 title:"ZOHIKO 4",
                 product:[
-                 {name:"Zohiko 4 Be Brave",src:gemImages[47]},
-                 {name:"Zohiko 4 Great Wave",src:gemImages[48]},
+                 {name:"Zohiko 4 Be Brave",src:gemImages[44]},
                 ]
               },
               gemGroup3:{
                 title:"ZOHIKO 2 ",
                 product:[
-                 {name:"Zohiko 2 ZOHIKO 2 Fan",src:gemImages[46]},
-                 {name:"Zohiko 2 Autumn Leaves",src:gemImages[41]},
-                 {name:"Zohiko 2 Biwa",src:gemImages[42]},
-                 {name:"Zohiko 2 Pull Toy",src:gemImages[45]},
-                 {name:"Zohiko 2 Kotsuzumi",src:gemImages[43]},
-                 {name:"Zohiko 2 Peach Blossom",src:gemImages[44]},
+                 {name:"Zohiko 2 Biwa",src:gemImages[38]},
+                 {name:"Zohiko 2 Black Peach Blossom",src:gemImages[39]},
+                 {name:"Zohiko 2 Pull Toy",src:gemImages[40]},
+                 {name:"Zohiko 2 Red Autumn Leaves",src:gemImages[41]},
+                 {name:"Zohiko 2 Red Biwa",src:gemImages[42]},
+                 {name:"Zohiko 2 Red Peach Blossom",src:gemImages[43]},
                 ]
               },
         },

@@ -5,7 +5,6 @@ export const shoeSlice = createSlice({
     name:'shoe',
     initialState:{
         selectedHeel:'20MM',
-        selectedView:'Final'
 
         
 
@@ -16,9 +15,6 @@ export const shoeSlice = createSlice({
      
       setSelectedHeel:(state,action)=>{
         state.selectedHeel=action.payload
-      },
-      setSelectedView:(state,action)=>{
-        state.selectedView=action.payload
       }
     }
 })

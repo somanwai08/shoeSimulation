@@ -11,18 +11,29 @@
 
 
 
-@media screen and (max-width:820px){
+@media  (min-width:576px) and (max-width:991px){
+    .heading{
+        padding-top: 18px;
+        font-size: 18px;
+    }
+    #MobileKellyGemTab{
+        .heading{
+            font-size:18px ;
+        }
+    }
+    .borderTop{
+        border-top:1px transparent solid
+    }
+   
+}
+
+
+@media (min-width:992px){
      
     .heading{
-        font-size: 30px;
+        font-size: 24px;
     }
     
 
 
-}
-@media screen and (max-width:576px){
-    .heading{
-        padding-top: 24px;
-        font-size: 24px;
-    }
 }

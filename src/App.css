@@ -94,50 +94,45 @@
 @media  (min-width:576px) and (max-width:991px){
       .tablet{
         display:block;
-        width: 80%;
+        width: 71%;
         margin: 0 auto;
       }
-      .tablet-upper{
+      .tablet-upper {
         height:30vh;
-        min-height: 400px;
+        min-height: 366px;
         max-width: 680px;
       }
+      .tablet-upper .ant-col{
+        max-width: 102%;
+      }
+      .tablet-upper .finalShoeContainer,
+      .tablet-upper .heelShowContainer{
+       width: 71%;
+       margin: 0 auto;
+      }
+      .tablet-upper .ant-carousel .slick-next,
+      .tablet-upper .ant-carousel .slick-prev{
+        opacity: 1;
+      }
       .tablet-bottom{
-        height: 40vh;
+        height: 39vh;
+        justify-content: center;
+        border-bottom: 1px #d1a543 solid;
+      }
+      .tablet-bottom .bottom-bottom{
+        width:50%
       }
       .ant-layout-footer {
         background-color: transparent;
-        padding: 0px 85px;
-        margin-top: -38px;
+        padding: 0px 112px;
+        margin-top: -8px;
       }
       .shoes{
         margin-top: 5%;
       }
-      .shoes-heels{
-        height:75%;
-        width: 80%;
-        margin: auto 0;
-        justify-content: space-evenly;
-      }
-      .shoes-heels .finalShoeContainer{
-        width:60%;
-        border-bottom: 1px solid #d1a543;
-      }
-      .shoes-heels .heelShowContainer{
-        width: 60%;
-      }
-      .shoes-heels 
-      .bottom-left{
-        height:100%;
-        padding-right: 5px;
-      }
-      .bottom-right{
-        height:100%;
-        padding-left: 10px;
-      }
       .shoes .finalShoeContainer{
         width: 60%;
-        margin: 0 30%;
+        margin: 0 auto;
       }
       .footer{
         justify-content: space-between;
@@ -149,6 +144,15 @@
       }
       .Button-Wrap{
         vertical-align: top;
+      }
+
+      .ant-carousel .slick-prev,
+      .ant-carousel .slick-next{
+        color:#D1A543;
+      }
+
+      .ant-card-bordered{
+        border: 1px solid transparent;
       }
 }
 

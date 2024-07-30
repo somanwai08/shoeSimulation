@@ -1,6 +1,6 @@
 
 import './App.css';
-import { Col, Row } from 'antd'
+import { Card, Carousel, Col, Row} from 'antd'
 import FinalShoe1 from './components/finalShoe1/finalShoe1';
 import ShoeCloseUp from './components/ShoeCloseUp/shoeCloseUp';
 import { Footer } from 'antd/es/layout/layout';
@@ -8,15 +8,12 @@ import { Outlet,useLocation,useNavigate } from 'react-router-dom';
 import HeelsSelectPanel from './components/Heels/HeelsSelectPanel/heelsSelectPanel';
 import HeelsShowPanel from './components/Heels/HeelsShow/heelsShowPanel';
 import logo from './assets/images/footer&header/Logo-for-Simulation.png'
+import { gemImages } from './Store/modules/gem';
 import FooterButton from './components/footerButton/footerButton';
 import MobileDetect from 'mobile-detect';
-import { setSelectedHeel, setSelectedView } from './Store/modules/shoe';
-import { useDispatch,useSelector } from 'react-redux';
 
 const requireContext=require.context('../src/assets/images/footer&header/',false)
 const headerNFooter = requireContext.keys().map(requireContext)
-
-
 
 
 
@@ -24,15 +21,21 @@ function App() {
         let location = useLocation()
         const navigate = useNavigate()
         const md = new MobileDetect(window.navigator.userAgent)
-        const dispatch = useDispatch()
-        const onChangeView = (view)=>{
-          return(e)=>{
-              dispatch(setSelectedView(view))
-              
-          }
-        }
-        const viewStatus = useSelector(state=>state.shoe.selectedView)
 
+        const contentStyle = {
+          margin: 0,
+          height: '28vh',
+          color: '#fff',
+          minHeight:'366px',
+          // lineHeight: '160px',
+          textAlign: 'center',
+          background: 'tansparent',
+          // border:'none'
+        };
+      
+        const onChange = (currentSlide) => {
+          // console.log(currentSlide);
+        };
 
   return (
     <div className="App" style={{overflowY:md.tablet()===null?'auto':'hidden'}}>
@@ -62,34 +65,38 @@ function App() {
       </Row>
     </Row>
     
-    <Row className='mobile-logo' style={{height:"8vh",borderBottom:'1px solid #d1a543'}}>
+    <Row className='mobile-logo' style={{height:"7vh",borderBottom:'1px solid #d1a543'}}>
           <img alt='' src={logo} style={{height:'100%',margin:'0 auto'}}></img>
         </Row>
     <Row className='tablet' >
-      <Row className='tablet-upper'>
-        <Col className='shoes'  sm={20} md={20} >
-        {viewStatus==='Final'?<FinalShoe1 style={{height:'100%'}}></FinalShoe1>:<ShoeCloseUp style={{height:'100%'}}></ShoeCloseUp>}
-        
-        </Col>
-        <Col className='shoes-heels' sm={4} md={4} >
-         <Row style={{height:'33%',paddingTop:'20px'}} justify='center' onClick={onChangeView('Final')}>
-         <FinalShoe1></FinalShoe1>
-         </Row>
-         <Row style={{height:'33%',paddingTop:'20px'}} justify='center' onClick={onChangeView('Close Up')}>
-         <ShoeCloseUp></ShoeCloseUp>
-         </Row>
-         <Row style={{height:'33%'}} justify='center' >
-         <HeelsShowPanel></HeelsShowPanel>
-         </Row>
-        </Col>
+      <Row className='tablet-upper' justify='center'>
+        {/* <FinalShoe1 style={{height:'100%'}}></FinalShoe1> */}
+       <Col>
+       <Carousel afterChange={onChange} arrows dots={false} >
+      <div>
+        <Card style={contentStyle} >
+        <FinalShoe1></FinalShoe1>
+        </Card>
+      </div>
+      <div>
+        <Card style={contentStyle} >
+        <ShoeCloseUp></ShoeCloseUp>
+        </Card>
+      </div>
+      <div>
+        <Card style={contentStyle} >
+        <HeelsShowPanel></HeelsShowPanel>
+        </Card>
+      </div>
+    </Carousel></Col>
       </Row>
       <Row className='tablet-bottom'>
-        <Col className='bottom-left' sm={20} md={20} >
+        <Row className='bottom-upper'  >
         <Outlet></Outlet>
-        </Col>
-        <Col className='bottom-right' sm={4} md={4} >
+        </Row>
+        <Row className='bottom-bottom'  >
         <HeelsSelectPanel borderBottom={true}></HeelsSelectPanel>
-        </Col>
+        </Row>
       </Row>
     </Row>
    
@@ -149,15 +156,13 @@ function App() {
         {location.pathname!=='/mesh-simulation/kelly'?<Col 
          className='Button-Wrap'
          onClick={()=>{
-              console.log('to kelly')
               navigate('/mesh-simulation/kelly')
          }}>
            <FooterButton title='NEXT' text='KELLY'></FooterButton>
          </Col>:<Col 
           className='Button-Wrap'
          onClick={()=>{
-              console.log('to legacy')
-              navigate('/mesh-simulation/legacy')
+              // navigate('/mesh-simulation/legacy')
          }}>
            <FooterButton title='NEXT' text='LEGACY'></FooterButton>
          </Col>}

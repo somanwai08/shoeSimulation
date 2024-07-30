@@ -93,7 +93,9 @@
 @media (min-width:576px) and (max-width:991px){
     .tablet{
         #MobileKellyGemTab{
-            height: 37vh !important;
+            height: 27vh !important;
+            border-bottom: transparent 1px solid;
+            width:100%;
             .ant-tabs{
                 height: 55vh;
        
@@ -108,7 +110,7 @@
            }
           .ant-tabs >.ant-tabs-nav .ant-tabs-nav-list{
                margin-bottom: 8px;
-            //    margin-top: -4px;
+               margin-top: 8px;
                .ant-tabs-tab-active{
                 color:#d1a543;
                     font-weight: 500;
