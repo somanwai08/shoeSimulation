@@ -9,6 +9,7 @@ export const gemImages = requireContext.keys().map(requireContext)
 
 const requireContextKelly = require.context('../../assets/images/Kelly/',false)
 export const gemImagesKelly = requireContextKelly.keys().map(requireContextKelly)
+console.log(gemImagesKelly,'gemImagesKelly')
 
 
 const requireContext1 = require.context('../../assets/images/legacy2',false)
@@ -74,21 +75,21 @@ export const gemSlice = createSlice({
             gemGroup6:{
               title:"Kelly",
               product:[
-               {name:"Kelly Orange",src:gemImagesKelly[0]},
-               {name:"Kelly Pink",src:gemImagesKelly[1]},
-               {name:"Kelly Red",src:gemImagesKelly[2]},
-               {name:"Kelly Skyblue",src:gemImagesKelly[3]},
-               {name:"Kelly Skyblue",src:gemImagesKelly[4]},
-               {name:"Kelly Skyblue",src:gemImagesKelly[5]},
-               {name:"Kelly Skyblue",src:gemImagesKelly[6]},
-               {name:"Kelly Skyblue",src:gemImagesKelly[7]},
-               {name:"Kelly Skyblue",src:gemImagesKelly[8]},
-               {name:"Kelly Skyblue",src:gemImagesKelly[9]},
-               {name:"Kelly Skyblue",src:gemImagesKelly[10]},
-               {name:"Kelly Skyblue",src:gemImagesKelly[11]},
-               {name:"Kelly Skyblue",src:gemImagesKelly[12]},
-               {name:"Kelly Skyblue",src:gemImagesKelly[13]},
-               {name:"Kelly Skyblue",src:gemImagesKelly[14]},
+               {name:"Kelly 1",src:gemImagesKelly[0]},
+               {name:"Kelly 2",src:gemImagesKelly[7]},
+               {name:"Kelly 3",src:gemImagesKelly[8]},
+               {name:"Kelly 4",src:gemImagesKelly[9]},
+               {name:"Kelly 5",src:gemImagesKelly[10]},
+               {name:"Kelly 6",src:gemImagesKelly[11]},
+               {name:"Kelly 7",src:gemImagesKelly[12]},
+               {name:"Kelly 8",src:gemImagesKelly[13]},
+               {name:"Kelly 9",src:gemImagesKelly[14]},
+               {name:"Kelly 10",src:gemImagesKelly[1]},
+               {name:"Kelly 11",src:gemImagesKelly[2]},
+               {name:"Kelly 12",src:gemImagesKelly[3]},
+               {name:"Kelly 13",src:gemImagesKelly[4]},
+               {name:"Kelly 14",src:gemImagesKelly[5]},
+               {name:"Kelly 15",src:gemImagesKelly[6]},
               
               ]
             },
