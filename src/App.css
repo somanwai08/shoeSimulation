@@ -116,6 +116,7 @@
       }
       .tablet-bottom{
         height: 39vh;
+        min-height: 400px;
         justify-content: center;
         border-bottom: 1px #d1a543 solid;
       }

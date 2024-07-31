@@ -61,15 +61,12 @@
       .KellyTab1{
         .gemBar{
           .gemBar1{
-          // 有新相後應該要調整
             width:66%;
-            // 有新相後應該要調整
             justify-content: space-between;
+            max-width: 541px;
             .gem{
-              // 有新相後應該要調整
               margin-bottom: 20px;
               img{
-              // 有新相後應該要調整
                 width:38px;
               }
             }

@@ -2,6 +2,7 @@ import './shoeCloseUp.scss'
 import React, { useEffect, useState } from 'react'
 import {setSelectedKellySide} from '../../Store/modules/gem.js'
 import { useSelector,useDispatch } from 'react-redux'
+import { useLocation } from 'react-router-dom'
 // 批量引入gem圖片
 import { gemImages1 } from '../../Store/modules/gem.js'
 // 引入鞋圖片
@@ -24,13 +25,10 @@ export default function ShoeCloseUp() {
     const [gemPic,setGemPic]=useState(gemImages1[0])
     const [leftKellyPic,setLeftKellyPic]=useState('')
     const [rightKellyPic,setRightKellyPic]=useState('')
-    // const [hdPic,setWDPic]=useState('')
-    // const selectedMaterial=useSelector(state=>state.shoe.selectedMaterial)
-    // const selectedSize=useSelector(state=>state.shoe.selectedSize)
-    // const selectedColor=useSelector(state=>state.shoe.selectedColor)
-    // const selectedHandle=useSelector(state=>state.shoe.selectedHandle)
-    // const pathClip=`${selectedSize}_${selectedMaterial}_${selectedColor}`
+
     const dispatch=useDispatch()
+    const location = useLocation()
+    const isLegacy = location.pathname.split('/')[2]==='legacy'?true:false
     
     
 
@@ -72,10 +70,13 @@ export default function ShoeCloseUp() {
     <div className='finalShoeContainer'>
       <div className='finalBag'>
           <img className='shoe' src={shoeImg} alt='' />
-          {/* <img className='woodHandle' src={hdPic} alt=''/> */}
-          <img className='gem' src={gemPic} alt='' />
+          {/* <img className='gem' src={gemPic} alt='' />
           <img className='leftKelly' src={leftKellyPic} alt='' />
-          <img className='rightKelly' src={rightKellyPic} alt='' />
+          <img className='rightKelly' src={rightKellyPic} alt='' /> */}
+           {/* 下面三行代碼，都是因為防止移動設備上出現邊框，而設置滿足具體條件才顯示該圖像，否則不顯示 */}
+           {selectedGem===''?'':<img className='gem' src={gemPic} alt='' />}
+          {selectedKelly.LEFT===''?'':<img className='leftKelly' src={isLegacy?'':leftKellyPic} alt='' />}
+          {selectedKelly.RIGHT===''?'':<img className='rightKelly' src={isLegacy?'':rightKellyPic} alt='' />}
       </div>
       
 

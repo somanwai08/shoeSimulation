@@ -8,7 +8,8 @@ import { Outlet,useLocation,useNavigate } from 'react-router-dom';
 import HeelsSelectPanel from './components/Heels/HeelsSelectPanel/heelsSelectPanel';
 import HeelsShowPanel from './components/Heels/HeelsShow/heelsShowPanel';
 import logo from './assets/images/footer&header/Logo-for-Simulation.png'
-import { gemImages } from './Store/modules/gem';
+import { setSelectedGem ,ResetKelly} from './Store/modules/gem';
+import { useDispatch } from 'react-redux';
 import FooterButton from './components/footerButton/footerButton';
 import MobileDetect from 'mobile-detect';
 
@@ -20,6 +21,7 @@ const headerNFooter = requireContext.keys().map(requireContext)
 function App() {
         let location = useLocation()
         const navigate = useNavigate()
+        const dispatch = useDispatch()
         const md = new MobileDetect(window.navigator.userAgent)
 
         const contentStyle = {
@@ -70,7 +72,6 @@ function App() {
         </Row>
     <Row className='tablet' >
       <Row className='tablet-upper' justify='center'>
-        {/* <FinalShoe1 style={{height:'100%'}}></FinalShoe1> */}
        <Col>
        <Carousel afterChange={onChange} arrows dots={false} >
       <div>
@@ -131,7 +132,6 @@ function App() {
       
     </Row>
        
-
       <Footer>
         <Row className='footer'>
           {location.pathname!=='/mesh-simulation/classic'?<Col 
@@ -162,7 +162,11 @@ function App() {
          </Col>:<Col 
           className='Button-Wrap'
          onClick={()=>{
-              // navigate('/mesh-simulation/legacy')
+              // 為了防止移動設備上有邊框，要設置默認legacy
+              dispatch(setSelectedGem('Arctic 2 White Gold Alfalfa'))
+              // // 為了防止移動設備上有邊框，跳去legacy page之前先清空kelly gem信息
+              dispatch(ResetKelly())
+              navigate('/mesh-simulation/legacy')
          }}>
            <FooterButton title='NEXT' text='LEGACY'></FooterButton>
          </Col>}

@@ -9,28 +9,54 @@ import ScrollableTabContent1 from '../../ScrollableTabContent/ScrollableTabConte
 
 
 export default function KellyGemPanel() {
+
+    // 獲取視口寬度
+    const windowWidth = window.innerWidth
   // kelly gem 組
     const gemGroup1=useSelector(state=>state.gem.artist.gemGroup6)
     const selectedSide = useSelector(state=>state.gem.selectedKelly.selectedSide)
     const tabArr = ['LEFT','RIGHT']
     const [activeKey, setActiveKey] = useState('0')
-    
+    const [isSmallScreen, setIsSmallScreen] = useState(windowWidth<992?true:false)
     const dispatch=useDispatch()
 
-    // 獲取視口寬度
-    const windowWidth = window.innerWidth
     
+    
+     // 监听窗口宽度变化
+  useEffect(() => {
+    const handleResize = () => {
+      
+      if(window.innerWidth<992){
+        setIsSmallScreen(true)
+      }else{
+        setIsSmallScreen(false)
+      }
+
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // 初始化状态
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
     const setKellySide = (e)=>{
             dispatch(setSelectedKellySide(tabArr[e]))
             setActiveKey(e)
 
     }
-useEffect(()=>{
-  if(selectedSide==='LEFT'){
-    setActiveKey('0')
-  }
-},[selectedSide])
+
+        //  set kelly tab是哪一面
+           useEffect(()=>{
+             if(selectedSide==='LEFT'){
+               setActiveKey('0')
+             }
+           },[selectedSide])
+
+        // 綁定resize事件
+
 
      
   return (
