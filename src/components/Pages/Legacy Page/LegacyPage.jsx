@@ -6,7 +6,6 @@ import MobileLegacyGemTab from '../../Gems/Gem Tab/Legacy/Mobile Gem Tab/MobileL
 export default function LegacyPage() {
   return (
     <div className='LegacyPage'>
-      
       <DesktopLegacyGemTab></DesktopLegacyGemTab>
       <MobileLegacyGemTab></MobileLegacyGemTab>
     </div>

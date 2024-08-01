@@ -195,9 +195,12 @@ export const gemSlice = createSlice({
         state.selectedKelly.selectedSide='LEFT'
         state.selectedKelly.LEFT=''
         state.selectedKelly.RIGHT=''
+      },
+      ResetLegacy:(state)=>{
+        state.selectedGem=''
       }
     }
 })
 
-export const {setSelectedGem,setSelectedSeries,setSelectedKellySide,setSelectedKelly,ResetKelly} = gemSlice.actions
+export const {setSelectedGem,setSelectedSeries,setSelectedKellySide,setSelectedKelly,ResetKelly,ResetLegacy} = gemSlice.actions
 export default gemSlice.reducer

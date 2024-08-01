@@ -3,7 +3,7 @@
 .gemTab{
     width: 95%;
     margin: 0 auto;
-    border-bottom: #d1a543 1px solid;
+    border-bottom: transparent 1px solid;
 
 
     .subTitle{
@@ -94,7 +94,7 @@
 @media (min-width:576px) and (max-width:991px){
     .tablet{
         #MobileLegacyGemTab{
-            height: 37vh !important;
+            height: 27vh !important;
             .ant-tabs{
                 height: 55vh;
        
@@ -111,21 +111,37 @@
                width:99%;
                justify-content: center;
                margin-bottom: 8px;
-               margin-top: -4px;
-               line-height: 0.4;
+               margin-top: 8px;
+               line-height: 0.3;
 
                 .ant-tabs-tab{
                     background-color: #fdfaf6;
                     width: 120px;
                     justify-content: center;
-                    padding-top: 15px;
+                    padding: 9px 0;
+                    margin-right: 3px;
+                    .ant-tabs-tab-btn{
+                        font-size: 13px;
+                        font-weight: 300;
+                    }
+                   
                 }
+                [data-node-key='3']{
+                    padding-right: 23px;
+        padding-left: 23px;
+        width: 126px;
+                }
+                [data-node-key='1']{
+                    width:120px;
+                }
+                
 
                .ant-tabs-tab-active{
                 font-weight: 500;
                 background-color: #d1a543;
                 .ant-tabs-tab-btn{
-                    color:white
+                    color:white;
+                    font-size:13px;
                 }
                }
                

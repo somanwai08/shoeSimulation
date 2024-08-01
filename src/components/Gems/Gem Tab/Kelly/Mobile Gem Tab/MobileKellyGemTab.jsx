@@ -11,7 +11,7 @@ export default function MobileKellyGemTab() {
   return (
                
     <div className='gemTab' id='MobileKellyGemTab'>
-      <Headline title='KELLY'></Headline>
+      <Headline title='KELLY' borderTop={false}></Headline>
          <KellyGemPanel></KellyGemPanel>
      
        

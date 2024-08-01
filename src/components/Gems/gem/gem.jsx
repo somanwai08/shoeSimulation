@@ -11,8 +11,6 @@ export default function Gem(props) {
        const selectedKelly = useSelector(state=>state.gem.selectedKelly)
        const {name,src,series,side}=props
 
-       console.log(side,'side')
-       console.log(name,'name')
 
        const isActive=()=>{
                  if(side===undefined&&name===selectedGem){
@@ -32,7 +30,6 @@ export default function Gem(props) {
                   return false
                  }
        }
-      //  console.log(isActive(),'isActive')
        const dispatch=useDispatch()
             // 控制圖片的
            const myClass=classnames({

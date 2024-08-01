@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 .gemBar{
     text-align: center;
     
@@ -8,14 +9,18 @@
         font-weight: 300;
         color:#6E550F;
         margin-bottom: 7px;
-        font-size: 20px;
-        letter-spacing: 2px;
-    }
-    @media (min-width:992px) {
-        h4{
-            margin-top: 0;
+        
+        // letter-spacing: 2px;
+        @media (min-width:576px) and (max-width:991px){
+            font-size: 14px;
+            margin-top: 2px;
+        }
+        @media (min-width:992px) {
+                margin-top: 0;
+                font-size: 20px;
         }
     }
+   
     
      // gem折疊
     .gemBar1{
@@ -26,8 +31,8 @@
         width: 100%;
         
         .gem{
-            margin-right: 11px;
-            margin-left: 11px;
+            margin-right: 4px;
+            margin-left: 4px;
             margin-bottom: 11px;
         }
     }
@@ -59,3 +64,4 @@
     
     border-right: none;
 }
+

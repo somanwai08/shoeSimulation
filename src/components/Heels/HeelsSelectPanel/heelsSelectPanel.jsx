@@ -9,6 +9,7 @@ const requireContext1 = require.context('../../../assets/images/heel/',false)
 export const gemImages1 = requireContext1.keys().map(requireContext1)
 
 
+console.log(gemImages1.reverse(),'reverse')
 
 
 
@@ -29,7 +30,7 @@ export default function HeelsSelectPanel() {
         }
 
         // 要渲染的內容
-        const heelsArr=gemImages1.map((item,i)=>{
+        const heelsArr=gemImages1.reverse().map((item,i)=>{
          const height = item.split('media/')[1].split('.')[0]
          const heightLabel = height.split('-')[0]
          const color = item.split('-')[2].split('.')[0]

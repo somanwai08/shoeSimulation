@@ -111,6 +111,15 @@
           .ant-tabs >.ant-tabs-nav .ant-tabs-nav-list{
                margin-bottom: 8px;
                margin-top: 8px;
+
+              .ant-tabs-tab{
+                margin-right: 3px;
+                .ant-tabs-tab-btn{
+                    font-size: 13px;
+                    font-weight: 300;
+                }
+              }
+
                .ant-tabs-tab-active{
                 color:#d1a543;
                     font-weight: 500;

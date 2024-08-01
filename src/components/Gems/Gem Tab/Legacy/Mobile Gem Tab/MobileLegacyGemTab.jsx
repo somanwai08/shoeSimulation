@@ -15,17 +15,17 @@ export default function MobileLegacyGemTab() {
       const items = [
         {
           key: '1',
-          label: 'Artist',
+          label: 'ARTIST',
           children: <LegacyArtistGemPanel scrollable={false}></LegacyArtistGemPanel>,
         },
         {
           key: '2',
-          label: 'Material',
+          label: 'MATERIAL',
           children: <MaterialGemPanel scrollable={false}></MaterialGemPanel>,
         },
         {
           key: '3',
-          label: 'Collaboration',
+          label: 'COLLABORATION',
           children: <CollabrationGemPanel scrollable={false}></CollabrationGemPanel>,
         },
       ];
@@ -36,7 +36,7 @@ export default function MobileLegacyGemTab() {
   return (
                
     <div className='gemTab' id='MobileLegacyGemTab'>
-      <Headline title='LEGACY'></Headline>
+      <Headline title='LEGACY' borderTop={false}></Headline>
       <Tabs
          items={items} className='main-Tab'/>
      

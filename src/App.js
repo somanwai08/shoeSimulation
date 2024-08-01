@@ -8,7 +8,7 @@ import { Outlet,useLocation,useNavigate } from 'react-router-dom';
 import HeelsSelectPanel from './components/Heels/HeelsSelectPanel/heelsSelectPanel';
 import HeelsShowPanel from './components/Heels/HeelsShow/heelsShowPanel';
 import logo from './assets/images/footer&header/Logo-for-Simulation.png'
-import { setSelectedGem ,ResetKelly} from './Store/modules/gem';
+import { setSelectedGem ,ResetKelly,ResetLegacy} from './Store/modules/gem';
 import { useDispatch } from 'react-redux';
 import FooterButton from './components/footerButton/footerButton';
 import MobileDetect from 'mobile-detect';
@@ -156,14 +156,13 @@ function App() {
         {location.pathname!=='/mesh-simulation/kelly'?<Col 
          className='Button-Wrap'
          onClick={()=>{
+              dispatch(ResetLegacy())
               navigate('/mesh-simulation/kelly')
          }}>
            <FooterButton title='NEXT' text='KELLY'></FooterButton>
          </Col>:<Col 
           className='Button-Wrap'
          onClick={()=>{
-              // 為了防止移動設備上有邊框，要設置默認legacy
-              dispatch(setSelectedGem('Arctic 2 White Gold Alfalfa'))
               // // 為了防止移動設備上有邊框，跳去legacy page之前先清空kelly gem信息
               dispatch(ResetKelly())
               navigate('/mesh-simulation/legacy')
