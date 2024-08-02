@@ -105,15 +105,15 @@
       .tablet-upper .ant-col{
         max-width: 102%;
       }
-      .tablet-upper .finalShoeContainer,
+      /* .tablet-upper .finalShoeContainer,
       .tablet-upper .heelShowContainer{
        width: 71%;
        margin: 0 auto;
-      }
-      .tablet-upper .ant-carousel .slick-next,
+      } */
+      /* .tablet-upper .ant-carousel .slick-next,
       .tablet-upper .ant-carousel .slick-prev{
         opacity: 1;
-      }
+      } */
       .tablet-bottom{
         height: 39vh;
         min-height: 400px;
@@ -130,13 +130,13 @@
         padding: 0px 112px;
         margin-top: -8px;
       }
-      .shoes{
+      /* .shoes{
         margin-top: 5%;
       }
       .shoes .finalShoeContainer{
         width: 60%;
         margin: 0 auto;
-      }
+      } */
       .footer{
         justify-content: space-between;
       }
@@ -149,14 +149,14 @@
         vertical-align: top;
       }
 
-      .ant-carousel .slick-prev,
+      /* .ant-carousel .slick-prev,
       .ant-carousel .slick-next{
         color:#D1A543;
       }
 
       .ant-card-bordered{
         border: 1px solid transparent;
-      }
+      } */
 }
 
 

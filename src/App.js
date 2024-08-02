@@ -1,6 +1,6 @@
 
 import './App.css';
-import { Card, Carousel, Col, Row} from 'antd'
+import { Card, Col, Row} from 'antd'
 import FinalShoe1 from './components/finalShoe1/finalShoe1';
 import ShoeCloseUp from './components/ShoeCloseUp/shoeCloseUp';
 import { Footer } from 'antd/es/layout/layout';
@@ -12,6 +12,7 @@ import { setSelectedGem ,ResetKelly,ResetLegacy} from './Store/modules/gem';
 import { useDispatch } from 'react-redux';
 import FooterButton from './components/footerButton/footerButton';
 import MobileDetect from 'mobile-detect';
+import CustomCarousel from './components/carousel/carousel';
 
 const requireContext=require.context('../src/assets/images/footer&header/',false)
 const headerNFooter = requireContext.keys().map(requireContext)
@@ -24,20 +25,6 @@ function App() {
         const dispatch = useDispatch()
         const md = new MobileDetect(window.navigator.userAgent)
 
-        const contentStyle = {
-          margin: 0,
-          height: '28vh',
-          color: '#fff',
-          minHeight:'366px',
-          // lineHeight: '160px',
-          textAlign: 'center',
-          background: 'tansparent',
-          // border:'none'
-        };
-      
-        const onChange = (currentSlide) => {
-          // console.log(currentSlide);
-        };
 
   return (
     <div className="App" style={{overflowY:md.tablet()===null?'auto':'hidden'}}>
@@ -73,23 +60,8 @@ function App() {
     <Row className='tablet' >
       <Row className='tablet-upper' justify='center'>
        <Col>
-       <Carousel afterChange={onChange} arrows dots={false} >
-      <div>
-        <Card style={contentStyle} >
-        <FinalShoe1></FinalShoe1>
-        </Card>
-      </div>
-      <div>
-        <Card style={contentStyle} >
-        <ShoeCloseUp></ShoeCloseUp>
-        </Card>
-      </div>
-      <div>
-        <Card style={contentStyle} >
-        <HeelsShowPanel></HeelsShowPanel>
-        </Card>
-      </div>
-    </Carousel></Col>
+      <CustomCarousel></CustomCarousel>
+    </Col>
       </Row>
       <Row className='tablet-bottom'>
         <Row className='bottom-upper'  >
