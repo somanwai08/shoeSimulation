@@ -9,7 +9,6 @@ export const gemImages = requireContext.keys().map(requireContext)
 
 const requireContextKelly = require.context('../../assets/images/Kelly/',false)
 export const gemImagesKelly = requireContextKelly.keys().map(requireContextKelly)
-console.log(gemImagesKelly,'gemImagesKelly')
 
 
 const requireContext1 = require.context('../../assets/images/legacy2',false)

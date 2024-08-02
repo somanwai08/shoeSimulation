@@ -1,54 +1,184 @@
 
 
-@media (min-width: 576px) and (max-width: 991px) {
-    .tablet-upper {
-      .finalShoeContainer,
-      .heelShowContainer {
-        margin: 0 auto;
-        @media (min-width: 576px) and (max-width: 606px) {
-          width: 94%;
-        }
+// @media (min-width: 576px) and (max-width: 991px) {
+//     .tablet-upper {
+//       .finalShoeContainer,
+//       .heelShowContainer {
+//         margin: 0 auto;
+//         @media (min-width: 576px) and (max-width: 606px) {
+//           width: 94%;
+//         }
   
-        @media (min-width: 607px) and (max-width: 653px) {
-          width: 88%;
-        }
+//         @media (min-width: 607px) and (max-width: 653px) {
+//           width: 88%;
+//         }
   
-        @media (min-width: 654px) and (max-width: 713px) {
-            width: 80%;
+//         @media (min-width: 654px) and (max-width: 713px) {
+//             width: 80%;
+//           }
+//          @media (min-width: 714px) and (max-width: 771px) {
+//            width: 71%;
+//          }
+//          @media (min-width: 772px) and (max-width: 825px) {
+//            width: 67%;
+//          }
+//          @media (min-width: 826px) and (max-width: 886px) {
+//            width: 62%;
+//          }
+//          @media (min-width: 887px) and (max-width: 917px) {
+//            width: 59%;
+//          }
+//          @media (min-width: 918px) and (max-width: 991px) {
+//            width: 52%;
+//          }
+//       }
+  
+//       .ant-carousel {
+//         .slick-next,
+//         .slick-prev {
+//           opacity: 1;
+//         }
+//       }
+  
+//       .ant-carousel {
+//         .slick-prev,
+//         .slick-next {
+//           color: #D1A543;
+//         }
+//       }
+//     }
+  
+//     .ant-card-bordered {
+//       border: 1px solid transparent;
+//     }
+//   }
+
+
+//   @media (min-width: 992px) {
+//     .tablet-upper {
+//       .finalShoeContainer,
+//       .heelShowContainer {
+//         margin: 0 auto;
+       
+//       }
+  
+//       .ant-carousel {
+//         .slick-next,
+//         .slick-prev {
+//           opacity: 1;
+//         }
+//       }
+  
+//       .ant-carousel {
+//         .slick-prev,
+//         .slick-next {
+//           color: #D1A543;
+//         }
+//       }
+//     }
+  
+//     .ant-card-bordered {
+//       border: 1px solid transparent;
+//     }
+//   }
+
+
+
+  @media (min-width: 576px) and (max-width: 991px) {
+    .custom-carousel{
+      .slide{
+        margin-bottom: 0;
+        height: 350px;
+        color: #fff;
+        line-height: 350px;
+        text-align: center;
+
+        .finalShoeContainer,
+        .heelShowContainer {
+          margin: 0 auto;
+          @media (min-width: 576px) and (max-width: 606px) {
+            width: 88%;
+            
           }
-         @media (min-width: 714px) and (max-width: 771px) {
-           width: 71%;
-         }
-         @media (min-width: 772px) and (max-width: 825px) {
-           width: 67%;
-         }
-         @media (min-width: 826px) and (max-width: 886px) {
-           width: 62%;
-         }
-         @media (min-width: 887px) and (max-width: 917px) {
-           width: 59%;
-         }
-         @media (min-width: 918px) and (max-width: 991px) {
-           width: 52%;
-         }
-      }
-  
-      .ant-carousel {
-        .slick-next,
-        .slick-prev {
-          opacity: 1;
+    
+          @media (min-width: 607px) and (max-width: 653px) {
+            width: 85%;
+            
+          }
+    
+          @media (min-width: 654px) and (max-width: 713px) {
+              width: 80%;
+              
+            }
+           @media (min-width: 714px) and (max-width: 771px) {
+             width: 66%;
+             
+           }
+           @media (min-width: 772px) and (max-width: 847px) {
+             width: 62%;
+           }
+           @media (min-width: 848px) and (max-width: 886px) {
+             width: 60%;
+           }
+           @media (min-width: 887px) and (max-width: 917px) {
+             width: 59%;
+           }
+           @media (min-width: 918px) and (max-width: 991px) {
+             width: 52%;
+           }
         }
-      }
-  
-      .ant-carousel {
-        .slick-prev,
-        .slick-next {
-          color: #D1A543;
+    }
+    }
+    
+  }
+
+
+  @media (min-width: 992px) {
+
+    .custom-carousel{
+      .slide{
+        margin: 0;
+        height: 520px;
+        color: #fff;
+        line-height: 360px;
+        text-align: center;
+
+        .finalShoeContainer,
+        .heelShowContainer{
+          margin: 0 auto;
+          // width:30%
+          @media (min-width: 992px) and (max-width: 1076px) {
+            width: 48%;
+            
+          }
+    
+          @media (min-width: 1077px) and (max-width: 1193px) {
+            width: 50%;
+            
+          }
+    
+          @media (min-width: 1194px) and (max-width: 1294px) {
+              width: 50%;
+              
+            }
+           @media (min-width: 1295px) and (max-width: 1395px) {
+             width: 50%;
+             
+           }
+           @media (min-width: 1396px) and (max-width: 1496px) {
+             width: 50%;
+           }
+           @media (min-width: 1497px) and (max-width: 1597px) {
+             width: 50%;
+           }
+           @media (min-width: 1598px) and (max-width: 1698px) {
+             width: 50%;
+           }
+           @media (min-width: 1699px) and (max-width: 1799px) {
+             width: 50%;
+           }
         }
-      }
     }
-  
-    .ant-card-bordered {
-      border: 1px solid transparent;
     }
+    
   }

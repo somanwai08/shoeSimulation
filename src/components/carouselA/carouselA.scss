@@ -1,0 +1,62 @@
+
+
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .custom-carouselA{
+        .slide{
+            margin: 0;
+            height: 370px;
+            color: #fff;
+            line-height: 360px;
+            text-align: center;
+            background-color: blue;
+    
+            .finalShoeContainer,
+            .heelShowContainer {
+              margin: 0 auto;
+              @media (min-width: 576px) and (max-width: 606px) {
+                width: 94%;
+              }
+        
+              @media (min-width: 607px) and (max-width: 653px) {
+                width: 88%;
+              }
+        
+              @media (min-width: 654px) and (max-width: 713px) {
+                  width: 80%;
+                }
+               @media (min-width: 714px) and (max-width: 771px) {
+                 width: 71%;
+               }
+               @media (min-width: 772px) and (max-width: 825px) {
+                 width: 67%;
+               }
+               @media (min-width: 826px) and (max-width: 886px) {
+                 width: 62%;
+               }
+               @media (min-width: 887px) and (max-width: 917px) {
+                 width: 59%;
+               }
+               @media (min-width: 918px) and (max-width: 991px) {
+                 width: 52%;
+               }
+            }
+        }
+    }
+    
+  }
+
+
+  @media (min-width: 992px) {
+    .custom-carouselA{
+        .slide{
+            margin: 0;
+            height: 360px;
+            color: #fff;
+            line-height: 360px;
+            text-align: center;
+            background-color: blue;
+        }
+    }
+    
+  }

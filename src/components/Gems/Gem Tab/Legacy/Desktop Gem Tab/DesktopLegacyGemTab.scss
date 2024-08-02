@@ -27,39 +27,44 @@
           width: 90%;
           margin: 0 auto;
       
-          .ant-tabs-nav-wrap{
-            justify-content: center;
-            .ant-tabs-nav-list{
-              justify-content: center;
-              .ant-tabs-tab {
-                color: #d1a543;
-                width: 120px;
-                background-color: #FDFAF6;
-                margin-right: 5px;
-                line-height: 0.4;
-        
-                &.ant-tabs-tab-active {
-                  background-color: #d1a543;
-                  .ant-tabs-tab-btn{
-                    color: white!important;
-                  }
-                  
-                }
-  
-                .ant-tabs-tab-btn {
-                  font-size: 0.8rem;
-                  width: 120px;
           
-                  #rc-tabs-2-tab-1,
-                  #rc-tabs-2-tab-2,
-                  #rc-tabs-11-tab-1,
-                  #rc-tabs-11-tab-2 {
-                    color: #d1a543 !important;
+            .ant-tabs-nav-wrap{
+              justify-content: center;
+              .ant-tabs-nav-list{
+                justify-content: center;
+                .ant-tabs-tab {
+                  color: #d1a543;
+                  width: 120px;
+                  background-color: #FDFAF6;
+                  margin-right: 5px;
+                  line-height: 0.4;
+          
+                  &.ant-tabs-tab-active {
+                    background-color: #d1a543;
+                    .ant-tabs-tab-btn{
+                      color: white!important;
+                    }
+                    
+                  }
+                  &+ .ant-tabs-tab{
+                    margin-left: 0px;
+                  }
+                  .ant-tabs-tab-btn {
+                    font-size: 0.8rem;
+                    width: 120px;
+            
+                    #rc-tabs-2-tab-1,
+                    #rc-tabs-2-tab-2,
+                    #rc-tabs-11-tab-1,
+                    #rc-tabs-11-tab-2 {
+                      color: #d1a543 !important;
+                    }
                   }
                 }
               }
             }
-          }
+          
+          
           
       
             

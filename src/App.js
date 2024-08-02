@@ -13,6 +13,7 @@ import { useDispatch } from 'react-redux';
 import FooterButton from './components/footerButton/footerButton';
 import MobileDetect from 'mobile-detect';
 import CustomCarousel from './components/carousel/carousel';
+import CarouselA from './components/carouselA/carouselA';
 
 const requireContext=require.context('../src/assets/images/footer&header/',false)
 const headerNFooter = requireContext.keys().map(requireContext)
@@ -32,12 +33,14 @@ function App() {
         <Row className='logo' style={{height:"10vh",borderBottom:'1px solid #d1a543'}}>
           <img alt='' src={headerNFooter[1]} style={{height:'100%',margin:'0 auto'}}></img>
         </Row>
-      <Row className='desktop-upper'>
-        <Col  span={4}><HeelsSelectPanel></HeelsSelectPanel></Col>
-        <Col  span={16} className='upper-middle'>
-        <FinalShoe1 ></FinalShoe1>
+      {/* <Row className='desktop-upper'> */}
+        {/* <Col  span={4}><HeelsSelectPanel></HeelsSelectPanel></Col> */}
+        <Col   className='upper-middle'>
+      
+        <CustomCarousel></CustomCarousel>
+        {/* <CarouselA></CarouselA> */}
         </Col>
-        <Col  span={4} style={{marginTop:"40px"}} >
+        {/* <Col  span={4} style={{marginTop:"40px"}} >
         <Row  style={{height:'33%'}} justify='center'>
         <HeelsShowPanel  ></HeelsShowPanel>
         </Row>
@@ -47,8 +50,8 @@ function App() {
         <Row  style={{height:'33%'}} justify='center'>
         <FinalShoe1 ></FinalShoe1>
         </Row>
-        </Col>
-      </Row>
+        </Col> */}
+      {/* </Row> */}
       <Row className='desktop-bottom'>
         <Outlet></Outlet>
       </Row>
@@ -58,11 +61,12 @@ function App() {
           <img alt='' src={logo} style={{height:'100%',margin:'0 auto'}}></img>
         </Row>
     <Row className='tablet' >
-      <Row className='tablet-upper' justify='center'>
-       <Col>
+      {/* <Row className='tablet-upper' justify='center'> */}
+       {/* <Col> */}
       <CustomCarousel></CustomCarousel>
-    </Col>
-      </Row>
+      {/* <CarouselA></CarouselA> */}
+    {/* </Col> */}
+      {/* </Row> */}
       <Row className='tablet-bottom'>
         <Row className='bottom-upper'  >
         <Outlet></Outlet>
@@ -146,6 +150,7 @@ function App() {
       </Footer>
      
     </div>
+    // <CarouselA></CarouselA>
   );
 }
 

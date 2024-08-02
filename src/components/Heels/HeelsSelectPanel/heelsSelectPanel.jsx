@@ -20,7 +20,6 @@ export default function HeelsSelectPanel() {
 
         const changeHeels=(key,height,color)=>{
             return()=>{
-
               // 選中的圖片顯示active
                 setSelectedPic(key)
               // 更新選中的heel height
@@ -30,7 +29,7 @@ export default function HeelsSelectPanel() {
         }
 
         // 要渲染的內容
-        const heelsArr=gemImages1.reverse().map((item,i)=>{
+        const heelsArr=gemImages1.map((item,i)=>{
          const height = item.split('media/')[1].split('.')[0]
          const heightLabel = height.split('-')[0]
          const color = item.split('-')[2].split('.')[0]

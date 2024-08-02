@@ -60,20 +60,20 @@
     display: block;
   }
 
-  .desktop .desktop-upper{
+  /* .desktop .desktop-upper{
     height:40vh;
     min-height: 430px;
     width:50%;
     max-width: 754px;
     margin: 0 auto;
     padding-top: 20px;
-  }
-  .desktop .desktop-upper .upper-middle{
+  } */
+  .desktop .upper-middle{
     padding-top: 37px;
   }
-  .desktop-upper > .ant-col{
+  /* .desktop-upper > .ant-col{
     height:100%;
-  }
+  } */
   .footer{
     justify-content:space-between ;
   }

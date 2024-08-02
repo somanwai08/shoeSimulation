@@ -21,22 +21,39 @@ export default function CustomCarousel() {
       };
 
   return (
-    <Carousel afterChange={onChange} arrows dots={false} >
-      <div>
-        <Card style={contentStyle} >
-        <FinalShoe1></FinalShoe1>
-        </Card>
-      </div>
-      <div>
-        <Card style={contentStyle} >
-        <ShoeCloseUp></ShoeCloseUp>
-        </Card>
-      </div>
-      <div>
-        <Card style={contentStyle} >
-        <HeelsShowPanel></HeelsShowPanel>
-        </Card>
-      </div>
-    </Carousel>
+    // <Carousel afterChange={onChange} arrows dots={false} >
+    //   <div>
+    //     <Card style={contentStyle} >
+    //     <FinalShoe1></FinalShoe1>
+    //     </Card>
+    //   </div>
+    //   <div>
+    //     <Card style={contentStyle} >
+    //     <ShoeCloseUp></ShoeCloseUp>
+    //     </Card>
+    //   </div>
+    //   <div>
+    //     <Card style={contentStyle} >
+    //     <HeelsShowPanel></HeelsShowPanel>
+    //     </Card>
+    //   </div>
+    // </Carousel>
+    <Carousel afterChange={onChange} arrows dots={false} className='custom-carousel'>
+    <div>
+      <h3 className='slide' >
+      <FinalShoe1></FinalShoe1>
+      </h3>
+    </div>
+    <div>
+      <h3 className='slide' >
+      <ShoeCloseUp></ShoeCloseUp>
+      </h3>
+    </div>
+    <div>
+      <h3 className='slide' >
+      <HeelsShowPanel></HeelsShowPanel>
+      </h3>
+    </div>
+  </Carousel>
   )
 }
