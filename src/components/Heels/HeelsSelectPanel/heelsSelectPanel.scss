@@ -32,12 +32,26 @@
 }
 
 @media screen and (max-width:576px) {
-    .heels-pic{
-        padding: 0;
-        .heels-choice{
-            padding: 8px 0;
+    .Heels-section{
+        width:85%;
+        .heading{
+            font-size: 15px;
+            padding-top: 15px;
+            border-top: 1px transparent solid;
+        }
+        .heels-pic{
+            padding: 0;
+            margin-top: -12px;
+            .heels-choice{
+                padding: 8px 0;
+                width:85px;
+                .ant-image{
+                    width: 100%!important;
+                }
+            }
         }
     }
+    
 
 }
 
@@ -71,28 +85,25 @@
         .heading{
             border-top: none;
             font-size: 24px;
+            font-weight: 500;
+            padding-top: 20px;
         }
 
-        .heels-choice{
-            padding: 8px 0;
-            .active{
-
-                &.indicator {
-                    // position: absolute;
-                    // left: 50%;
-                    bottom: 4px;
-                    // transform: translateX(-50%);
-                    // width: 5px;
-                    // height: 5px;
-                    // background-color: #d1a543;
-                    // border-radius: 50%;
-                    // display: inline-block;
-                  }
-            }
-            .height-txt{
-                display: none;
+        .heels-pic{
+            justify-content: center;
+            margin-top: -20px;
+            .heels-choice{
+                padding: 8px 0;
+                width: 143px;
+                .active{
+    
+                    &.indicator {
+                        bottom: 4px;
+                      }
+                }
             }
         }
+        
         
     } 
 

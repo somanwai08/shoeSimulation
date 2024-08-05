@@ -13,11 +13,12 @@
           width: 95%;
           margin: 0 auto;
           border-bottom: none;
+          height:212px;
       
           .heading {
             border-top: none;
             margin-bottom: 10px;
-            font-weight: 600;
+            font-weight: 500;
             padding-top: 0;
           }
       
@@ -38,9 +39,11 @@
                   background-color: #FDFAF6;
                   margin-right: 5px;
                   line-height: 0.4;
+                  padding: 9px 0;
           
                   &.ant-tabs-tab-active {
                     background-color: #d1a543;
+                    padding: 9px 0;
                     .ant-tabs-tab-btn{
                       color: white!important;
                     }
@@ -61,15 +64,13 @@
                     }
                   }
                 }
+                [data-node-key='3']{
+                  padding-right: 23px;
+                  padding-left: 23px;
+                  width: 166px;
+              }
               }
             }
-          
-          
-          
-      
-            
-      
-            
           
         }
       }

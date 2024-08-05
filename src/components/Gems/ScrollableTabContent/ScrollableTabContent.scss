@@ -15,4 +15,8 @@
   &::-webkit-scrollbar {
     display: none;
   }
+
+  @media (min-width:1533px) {
+     justify-content: center;
+  }
 }

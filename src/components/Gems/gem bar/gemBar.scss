@@ -41,8 +41,6 @@
     .gemBar2{
         display:flex;
         justify-content: center;
-        // flex-wrap: wrap;
-        // width: 203px;
         margin: 0 auto;
         .gem{
             // flex:1;
@@ -55,10 +53,25 @@
 }
 
 
+#DeskKellyGemTab{
+    // gem不折疊
+    .gemBar2{
+        display:flex;
+        justify-content: center;
+        margin: 0 auto;
+        .gem{
+            margin-right: 30px;
+        }
+        .gem:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
 .border{
     padding-right: 25px;
     padding-left: 25px;
-    border-right: 1px solid gray;
+    border-right: 1px solid #E5E5E5;
 }
 .border:last-child{
     

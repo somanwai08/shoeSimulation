@@ -30,31 +30,18 @@ function App() {
   return (
     <div className="App" style={{overflowY:md.tablet()===null?'auto':'hidden'}}>
       <Row  className='desktop'>
-        <Row className='logo' style={{height:"10vh",borderBottom:'1px solid #d1a543'}}>
+        <Row className='logo' style={{height:"10vh",minHeight:'88px',borderBottom:'1px solid #d1a543'}}>
           <img alt='' src={headerNFooter[1]} style={{height:'100%',margin:'0 auto'}}></img>
         </Row>
-      {/* <Row className='desktop-upper'> */}
-        {/* <Col  span={4}><HeelsSelectPanel></HeelsSelectPanel></Col> */}
-        <Col   className='upper-middle'>
-      
+        <Col   className='upper'>
         <CustomCarousel></CustomCarousel>
-        {/* <CarouselA></CarouselA> */}
         </Col>
-        {/* <Col  span={4} style={{marginTop:"40px"}} >
-        <Row  style={{height:'33%'}} justify='center'>
-        <HeelsShowPanel  ></HeelsShowPanel>
-        </Row>
-        <Row  style={{height:'33%'}} justify='center'>
-        <ShoeCloseUp></ShoeCloseUp>
-        </Row>
-        <Row  style={{height:'33%'}} justify='center'>
-        <FinalShoe1 ></FinalShoe1>
-        </Row>
-        </Col> */}
-      {/* </Row> */}
-      <Row className='desktop-bottom'>
+      <Row className='middle'  >
         <Outlet></Outlet>
-      </Row>
+        </Row>
+        <Row className='bottom'  >
+        <HeelsSelectPanel borderBottom={true}></HeelsSelectPanel>
+        </Row>
     </Row>
     
     <Row className='mobile-logo' style={{height:"7vh",borderBottom:'1px solid #d1a543'}}>
@@ -78,7 +65,7 @@ function App() {
     </Row>
    
    
-    <Row className='mobile'>
+    {/* <Row className='mobile'>
       <Row >
         <Col span={16} className='mobile-upper'><FinalShoe1></FinalShoe1></Col>
         
@@ -97,7 +84,6 @@ function App() {
       </Row>
       <Row>
       <Col span={16} className='mobile-halfContainer'>
-      {/* <GemTab></GemTab> */}
       <Outlet></Outlet>
       </Col>
         <Col span={8} className='mobile-halfContainer' just>
@@ -106,6 +92,23 @@ function App() {
         
         </Row>
       
+    </Row> */}
+
+<Row className='mobile' >
+      {/* <Row className='tablet-upper' justify='center'> */}
+       {/* <Col> */}
+      <CustomCarousel></CustomCarousel>
+      {/* <CarouselA></CarouselA> */}
+    {/* </Col> */}
+      {/* </Row> */}
+      <Row className='mobile-bottom'>
+        <Row className='bottom-upper'  >
+        <Outlet></Outlet>
+        </Row>
+        <Row className='mobile-bottom'  >
+        <HeelsSelectPanel borderBottom={true}></HeelsSelectPanel>
+        </Row>
+      </Row>
     </Row>
        
       <Footer>

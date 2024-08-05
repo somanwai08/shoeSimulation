@@ -82,6 +82,52 @@
 //     }
 //   }
 
+@media (max-width:575px) {
+  .custom-carousel{
+    .slide{
+      margin-bottom: 0;
+      height: 30vh;
+      color: #fff;
+      line-height: 350px;
+      text-align: center;
+
+      .finalShoeContainer,
+      .heelShowContainer {
+        margin: 0 auto;
+        @media (min-width: 576px) and (max-width: 606px) {
+          width: 88%;
+          
+        }
+  
+        @media (min-width: 607px) and (max-width: 653px) {
+          width: 85%;
+          
+        }
+  
+        @media (min-width: 654px) and (max-width: 713px) {
+            width: 80%;
+            
+          }
+         @media (min-width: 714px) and (max-width: 771px) {
+           width: 66%;
+           
+         }
+         @media (min-width: 772px) and (max-width: 847px) {
+           width: 62%;
+         }
+         @media (min-width: 848px) and (max-width: 886px) {
+           width: 60%;
+         }
+         @media (min-width: 887px) and (max-width: 917px) {
+           width: 59%;
+         }
+         @media (min-width: 918px) and (max-width: 991px) {
+           width: 52%;
+         }
+      }
+  }
+  }
+}
 
 
   @media (min-width: 576px) and (max-width: 991px) {
@@ -138,7 +184,8 @@
     .custom-carousel{
       .slide{
         margin: 0;
-        height: 520px;
+        height: 40vh;
+        min-height: 360px;
         color: #fff;
         line-height: 360px;
         text-align: center;
@@ -146,38 +193,29 @@
         .finalShoeContainer,
         .heelShowContainer{
           margin: 0 auto;
-          // width:30%
-          @media (min-width: 992px) and (max-width: 1076px) {
-            width: 48%;
+          @media (min-width: 992px) and (max-width: 1294px) {
+            width: 23%;
             
           }
-    
-          @media (min-width: 1077px) and (max-width: 1193px) {
-            width: 50%;
-            
-          }
-    
-          @media (min-width: 1194px) and (max-width: 1294px) {
-              width: 50%;
-              
-            }
            @media (min-width: 1295px) and (max-width: 1395px) {
-             width: 50%;
+             width: 22%;
              
            }
            @media (min-width: 1396px) and (max-width: 1496px) {
-             width: 50%;
+             width: 20%;
            }
-           @media (min-width: 1497px) and (max-width: 1597px) {
-             width: 50%;
+           @media (min-width: 1497px) and (max-width: 1571px) {
+             width: 19%;
            }
-           @media (min-width: 1598px) and (max-width: 1698px) {
-             width: 50%;
+           @media (min-width: 1572px){
+             width: 18%;
            }
-           @media (min-width: 1699px) and (max-width: 1799px) {
-             width: 50%;
-           }
+           
         }
+    }
+
+    .slick-prev,.slick-next{
+      color:#d1a543;
     }
     }
     

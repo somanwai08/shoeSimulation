@@ -1,3 +1,27 @@
+@media (max-width:575px){
+  .footer-Button{
+    h6{
+        color: #d1a543;
+        margin-block-end: 0;
+        font-size: 0.6em;
+        font-weight: 400;
+    }
+    .square{
+    display: flex;
+    border: 1px solid #d1a543;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+      p{
+        font-size: 8px;
+        font-weight: 700;
+        color:#d1a543
+      }
+    }
+}
+}
+
 @media (min-width:576px) and (max-width:991px) {
     .footer-Button{
         h6{
@@ -28,6 +52,7 @@
         color: #d1a543;
         margin-block-end: 0;
         font-size: 0.6em;
+        font-weight: 400;
     }
     .square{
     display: flex;
@@ -38,7 +63,8 @@
     align-items: center;
       p{
         font-size: 10px;
-        color:#d1a543
+        color:#d1a543;
+        font-weight: 700;
       }
     }
 }
