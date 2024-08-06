@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="App" style={{overflowY:md.tablet()===null?'auto':'hidden'}}>
       <Row  className='desktop'>
-        <Row className='logo' style={{height:"10vh",minHeight:'88px',borderBottom:'1px solid #d1a543'}}>
+        <Row className='logo' style={{height:"10vh",minHeight:'81px',borderBottom:'1px solid #d1a543'}}>
           <img alt='' src={headerNFooter[1]} style={{height:'100%',margin:'0 auto'}}></img>
         </Row>
         <Col   className='upper'>

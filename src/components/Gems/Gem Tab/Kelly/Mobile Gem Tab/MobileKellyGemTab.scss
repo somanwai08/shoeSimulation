@@ -24,53 +24,6 @@
 }
 
 
-// .tablet{
-//     .main-Tab{
-//         width:90%;
-//         margin:0 auto;
-//         .ant-tabs .ant-tabs-tab{
-//             color:#6e550F
-//         }
-//         .ant-tabs-tab-btn{
-//             color: #d1a543;
-//             // 控制‘legacy’和‘classic’兩字的大小
-//             font-size: 1rem;
-//         }
-        
-//     }
-// }
-
-
-
-// .tablet{
-//     .Legacy-Tab,.Classic-Tab{
-//         .ant-tabs-nav-list{
-//             width:99%;
-    
-//             .ant-tabs-tab{
-//                 width:33%;
-//                 justify-content: center;
-//                 .ant-tabs-tab-btn{
-//                     color:#d1a543;
-//                     // 控制‘material’，‘artist’，‘Collaboration’字體的大小
-//                     font-size:0.8rem;
-//                     padding-top: 3px;
-//                 }
-//                 background-color: #FDFAF6;
-//             }
-    
-//             .ant-tabs-tab.ant-tabs-tab-active{
-                
-//                 background-color: #D1a543;
-//                 .ant-tabs-tab-btn{
-//                     color:white;
-//                 }
-//            }
-//         }
-        
-//     } 
-// }
-
 
 
 @media screen and (max-width:576px){
@@ -124,27 +77,36 @@
                
                .ant-tabs-content-holder{
                    height:50vh;
+                   .gemBar{
+                    border-bottom: 1px solid #d1a543;
+                    // 為了看起來和Mobile Legacy Tab下方的橫線重疊而加的padding
+                    padding-bottom: 5px;
+                   }
                }
        
            }
-          .ant-tabs >.ant-tabs-nav .ant-tabs-nav-list{
-               margin-bottom: 8px;
-               margin-top: 8px;
-
-              .ant-tabs-tab{
-                margin-right: 3px;
-                .ant-tabs-tab-btn{
-                    font-size: 13px;
-                    font-weight: 300;
-                }
-              }
-
-               .ant-tabs-tab-active{
-                color:#d1a543;
-                    font-weight: 500;
+          .ant-tabs >.ant-tabs-nav{
+            border-bottom: 1px solid #d1a543;
+            .ant-tabs-nav-list{
+                margin-bottom: 8px;
+                margin-top: 8px;
+ 
+               .ant-tabs-tab{
+                 margin-right: 3px;
+                 .ant-tabs-tab-btn{
+                     font-size: 13px;
+                     font-weight: 300;
+                 }
                }
-               
-           }
+ 
+                .ant-tabs-tab-active{
+                 color:#d1a543;
+                     font-weight: 500;
+                }
+                
+            }
+          } 
+          
         }
     }
         

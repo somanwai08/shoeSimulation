@@ -15,17 +15,17 @@ export default function MobileLegacyGemTab() {
       const items = [
         {
           key: '1',
-          label: 'ARTIST',
+          label: 'Artist',
           children: <LegacyArtistGemPanel scrollable={false}></LegacyArtistGemPanel>,
         },
         {
           key: '2',
-          label: 'MATERIAL',
+          label: 'Material',
           children: <MaterialGemPanel scrollable={false}></MaterialGemPanel>,
         },
         {
           key: '3',
-          label: 'COLLABORATION',
+          label: 'Collaboration',
           children: <CollabrationGemPanel scrollable={false}></CollabrationGemPanel>,
         },
       ];

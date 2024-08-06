@@ -15,7 +15,7 @@ export default function KellyGemPanel() {
   // kelly gem 組
     const gemGroup1=useSelector(state=>state.gem.artist.gemGroup6)
     const selectedSide = useSelector(state=>state.gem.selectedKelly.selectedSide)
-    const tabArr = ['LEFT','RIGHT']
+    const tabArr = ['Left','Right']
     const [activeKey, setActiveKey] = useState('0')
     const [isSmallScreen, setIsSmallScreen] = useState(windowWidth<992?true:false)
     const dispatch=useDispatch()
@@ -50,7 +50,7 @@ export default function KellyGemPanel() {
 
         //  set kelly tab是哪一面
            useEffect(()=>{
-             if(selectedSide==='LEFT'){
+             if(selectedSide==='Left'){
                setActiveKey('0')
              }
            },[selectedSide])

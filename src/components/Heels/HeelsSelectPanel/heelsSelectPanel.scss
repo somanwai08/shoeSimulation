@@ -13,14 +13,11 @@
             transform: translateX(-50%);
             width: 5px;
             height: 5px;
-            background-color: #d1a543;
+            background-color: transparent;
             border-radius: 50%;
             display: inline-block;
           }
     }
-
-    
-
 
     .height-txt{
         position: absolute;
@@ -49,6 +46,9 @@
                     width: 100%!important;
                 }
             }
+            .height-txt{
+                font-size: 0.6em;
+            }
         }
     }
     
@@ -58,7 +58,7 @@
 @media  (min-width:576px) and (max-width:992px){
     .Heels-section{
         height:17vh;
-        margin-top: 9px;
+        margin-top: 24px;
         .heels-pic{
             margin-top: -22px;
             .heels-choice{
@@ -67,6 +67,7 @@
             }
             .height-txt{
                 bottom: -16%;
+                font-size: 0.6em;
             }
         }
        
@@ -101,6 +102,9 @@
                         bottom: 4px;
                       }
                 }
+            }
+            .height-txt{
+                font-size: 0.6em;
             }
         }
         

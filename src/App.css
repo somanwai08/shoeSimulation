@@ -99,20 +99,15 @@
         width: 71%;
         margin: 0 auto;
       }
-      /* .tablet-upper {
-        height:30vh;
-        min-height: 366px;
-        max-width: 680px;
-      }
-      .tablet-upper .ant-col{
-        max-width: 102%;
-      } */
       .tablet-bottom{
         height: 39vh;
         min-height: 400px;
         justify-content: center;
-        border-bottom: 1px #d1a543 solid;
-        border-top: 1px #d1a543 solid;
+      }
+      .tablet-bottom .bottom-upper{
+        /* background-color: yellow; */
+        width: 100%;
+        /* border-bottom: 1px solid #d1a543; */
       }
       .tablet-bottom .bottom-bottom{
         width:50%;
@@ -128,8 +123,8 @@
       }
       .footer .footer-logo{
         display: flex;
-        justify-content: center;
-        align-items:end;
+        align-items: center;
+        padding-top: 32px;
       }
       .Button-Wrap{
         vertical-align: top;

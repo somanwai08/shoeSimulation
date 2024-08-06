@@ -16,17 +16,17 @@ export default function DesktopLegacyGemTab() {
       const items2=[
         {
           key:'1',
-          label:'ARTIST',
+          label:'Artist',
           children:<LegacyArtistGemPanel scrollable={true}></LegacyArtistGemPanel>
         },
         {
           key:'2',
-          label:'MATERIAL',
+          label:'Material',
           children:<MaterialGemPanel scrollable={true}></MaterialGemPanel>
         },
         {
           key:'3',
-          label:'COLLABORATION',
+          label:'Collaboration',
           children:<CollabrationGemPanel scrollable={true}></CollabrationGemPanel>
         }
         
