@@ -11,12 +11,44 @@
     background-color: #DBC99D;
     border-radius: 4px;
 }
-
+@media screen and (max-width:576px){
+    .CollabrationTab{
+        height: 169px;
+        margin-top: 6px;
+        h4{
+            margin-top: 2px;
+            font-size: 9px;
+        }
+        .gemBar{
+            .gemBar1{
+                 // 為了讓zohiko2 系列可以一行黑色，一行紅色，
+                // 這裡故意讓所有container長度，相對Artist和Material系列要短
+                width:179px;
+                .gem{
+                    margin-right: 6px;
+                    margin-left: 6px;
+                    img{
+                        width:33px
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (min-width:576px) and (max-width:992px){
     .CollabrationTab{
         height: 22vh;
         margin: 0 auto;
         margin-top: -13px;
-        width: 325px;
+        width: 375px;
+        .gemBar{
+            .gemBar1{
+                // 為了讓zohiko2 系列可以一行黑色，一行紅色，
+                // 這裡故意讓所有container長度，相對Artist和Material系列要短
+                width:246px;
+                
+            }
+        }
     }
 }
+

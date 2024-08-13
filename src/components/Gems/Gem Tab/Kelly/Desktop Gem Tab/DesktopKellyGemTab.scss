@@ -9,18 +9,19 @@
 }
 @media (min-width:992px){
     .desktop {
-        .DeskGemTab {
+      #DeskKellyGemTab {
           width: 95%;
           margin: 0 auto;
           border-bottom: none;
-          height:212px;
+          height:176px;
       
           .heading {
             border-top: none;
-            margin-bottom: 10px;
+            margin-bottom: 4px;
             font-weight: 500;
             padding-top: 0;
           }
+
         }
       
         .main-Tab {
@@ -28,42 +29,53 @@
           margin: 0 auto;
       
           .ant-tabs{
-            .ant-tabs-nav-list{
-              justify-content: center;
-              .ant-tabs-tab {
-                color: #d1a543;
-                width: 100px;
-                background-color: #FDFAF6;
-                margin-right: 5px;
-                line-height: 0.4;
-        
-                &.ant-tabs-tab-active {
-                  background-color: #d1a543;
-                  .ant-tabs-tab-btn{
-                    color: white!important;
-                  }
-                  
-                }
-                &+ .ant-tabs-tab{
-                  margin-left: 0px;
-                }
-                .ant-tabs-tab-btn {
-                  font-size: 0.8rem;
+            .ant-tabs-nav{
+              margin:0 0 8px 0;
+              .ant-tabs-nav-list{
+                justify-content: center;
+                .ant-tabs-tab {
+                  color: #d1a543;
                   width: 100px;
+                  background-color: #FDFAF6;
+                  margin-right: 5px;
+                  line-height: 0.4;
           
-                  #rc-tabs-2-tab-1,
-                  #rc-tabs-2-tab-2,
-                  #rc-tabs-11-tab-1,
-                  #rc-tabs-11-tab-2 {
-                    color: #d1a543 !important;
+                  &.ant-tabs-tab-active {
+                    background-color: #d1a543;
+                    .ant-tabs-tab-btn{
+                      color: white!important;
+                    }
+                    
+                  }
+                  &+ .ant-tabs-tab{
+                    margin-left: 0px;
+                  }
+                  .ant-tabs-tab-btn {
+                    font-size: 0.8rem;
+                    width: 100px;
+            
+                    #rc-tabs-2-tab-1,
+                    #rc-tabs-2-tab-2,
+                    #rc-tabs-11-tab-1,
+                    #rc-tabs-11-tab-2 {
+                      color: #d1a543 !important;
+                    }
                   }
                 }
               }
             }
+            
+            .gemBar{
+              .gemBar2{
+                .gem{
+                  img{
+                    width:34px
+                  }
+                }
+              }
+              
+            }
           }
-          
-
-
         }
       }
 }

@@ -19,7 +19,7 @@ export default function CollabrationGemPanel(props) {
     <div className='CollabrationTab'>
         <GemBar group={gemGroup1} series={'Collabration Series'} horizontal={false}></GemBar>
         <GemBar group={gemGroup2} series={'Collabration Series'} horizontal={false}></GemBar>
-        <GemBar group={gemGroup3} series={'Collabration Series'} horizontal={false}></GemBar>      
+        <GemBar group={gemGroup3} series={'Collabration Series'} horizontal={false} ></GemBar>      
     </div>
   )
 }

@@ -6,7 +6,7 @@
   .custom-carousel{
     .slide{
       margin-bottom: 0;
-      height: 30vh;
+      height: 195px;
       color: #fff;
       line-height: 350px;
       text-align: center;
@@ -46,6 +46,17 @@
          }
       }
   }
+
+  .slick-prev,.slick-next{
+    color:#d1a543!important;
+    opacity:1;
+  }
+  .slick-prev{
+    margin-left: 40px;
+  }
+  .slick-next{
+    margin-right: 40px;
+  }
   }
 }
 
@@ -53,11 +64,12 @@
   @media (min-width: 576px) and (max-width: 991px) {
     .custom-carousel{
       .slide{
-        margin-bottom: 0;
+        margin-bottom: -12px;
         height: 350px;
         color: #fff;
         line-height: 350px;
         text-align: center;
+        margin-top: 26px;
 
         .finalShoeContainer,
         .heelShowContainer {
@@ -97,12 +109,13 @@
 
     .slick-prev,.slick-next{
       color:#d1a543!important;
+      opacity:1;
     }
     .slick-prev{
-      margin-left: 70px;
+      margin-left: 60px;
     }
     .slick-next{
-      margin-right: 70px;
+      margin-right: 40px;
     }
     }
     
@@ -114,8 +127,8 @@
     .custom-carousel{
       .slide{
         margin: 0;
-        height: 40vh;
-        min-height: 298px;
+        height:255px;
+        min-height: 255px;
         color: #fff;
         line-height: 360px;
         text-align: center;
@@ -123,29 +136,26 @@
         .finalShoeContainer,
         .heelShowContainer{
           margin: 0 auto;
-          @media (min-width: 992px) and (max-width: 1294px) {
-            width: 23%;
-            
-          }
-           @media (min-width: 1295px) and (max-width: 1395px) {
-             width: 22%;
-             
-           }
-           @media (min-width: 1396px) and (max-width: 1496px) {
-             width: 20%;
-           }
-           @media (min-width: 1497px) and (max-width: 1571px) {
-             width: 19%;
-           }
-           @media (min-width: 1572px){
-             width: 18%;
-           }
+          width: 15%;
            
         }
     }
 
     .slick-prev,.slick-next{
       color:#d1a543;
+      opacity:1;
+    }
+    .slick-prev{
+      margin-left: 350px;
+      @media (min-width: 992px) and (max-width: 1200px) {
+             margin-left: 280px;
+           }
+    }
+    .slick-next{
+      margin-right: 350px;
+      @media (min-width: 992px) and (max-width: 1200px) {
+        margin-right: 280px;
+           }
     }
     }
     

@@ -45,7 +45,7 @@
 @media (min-width:992px){
   .ant-layout-footer {
     padding: 0;
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
   }
 }
@@ -78,11 +78,13 @@
   }
   .footer{
     justify-content:space-between ;
+    margin-top: -40px;
   }
   .footer .footer-logo{
     display: flex;
     justify-content: center;
-    align-items:end;
+    align-items: center;
+    padding-top: 71px;
   }
   .mobile-logo{
     display: none;
@@ -105,7 +107,7 @@
         justify-content: center;
       }
       .tablet-bottom .bottom-upper{
-        /* background-color: yellow; */
+        justify-content: center;
         width: 100%;
         /* border-bottom: 1px solid #d1a543; */
       }
@@ -116,7 +118,7 @@
       .ant-layout-footer {
         background-color: transparent;
         padding: 0px 112px;
-        margin-top: -8px;
+        margin-top: -14px;
       }
       .footer{
         justify-content: space-between;
@@ -144,26 +146,27 @@
     height: 39vh;
     min-height: 357px;
     justify-content: center;
-    /* border-bottom: 1px #d1a543 solid; */
   }
   .mobile .mobile-bottom .bottom-bottom{
     width:50%;
     margin-top: 15px;
   }
-  .mobile .ant-layout-footer {
-    background-color: transparent;
-    padding: 0px 112px;
-    margin-top: -8px;
-  }
   .ant-layout-footer {
     background-color: transparent;
     padding: 0;
     width: 83%;
-    border-top: 1px #d1a543 solid;;
     margin: 0 auto;
+    margin-top: -18px;
     .ant-row {
       justify-content: space-between;
     }
+  }
+  .footer-logo{
+    margin-top: 23px;
+  }
+  .footer-Button{
+    margin-top: -20px;
+
   }
 }
 

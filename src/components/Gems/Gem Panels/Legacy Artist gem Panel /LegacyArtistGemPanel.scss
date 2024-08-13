@@ -18,7 +18,25 @@
 
 @media screen and (max-width:576px){
     .ArtistTab{
-        height: 48vh;
+        height: 163px;
+        margin-top: 6px;
+        h4{
+            margin-top: 2px;
+            font-size: 9px;
+        }
+        .gemBar{
+            .gemBar1{
+                width:251px;
+                .gem{
+                    margin-right: 6px;
+                    margin-left: 6px;
+                    img{
+                        width:38px
+                    }
+                }
+            }
+        }
+        
     }
 }
 
@@ -27,6 +45,7 @@
         height: 22vh;
         margin: 0 auto;
         margin-top: -13px;
-        width:325px;
+        // width:325px;
+        width:374px
     }
 }

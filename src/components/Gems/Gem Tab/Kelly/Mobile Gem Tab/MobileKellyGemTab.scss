@@ -32,6 +32,7 @@
          .heading{
             font-size: 15px;
             padding-top: 15px;
+            border-top: 1px solid transparent;
          }
         
         .KellyTab{
@@ -39,9 +40,9 @@
                 max-width: 360px;
                 .gem{
                     margin-right: 14px;
-        margin-left: 14px;
+                     margin-left: 14px;
                     img{
-                        width:34px
+                        width:31px
                     }
                 }
             }
@@ -51,6 +52,24 @@
                     margin: 0;
                   }
                 }
+
+                .ant-tabs-content-holder{
+                    .gemBar{
+                        // border heighlightin kelly part
+                        border-bottom: 1px solid #d1a543;
+                    }
+                }
+              }
+              .ant-tabs >.ant-tabs-nav{
+                .ant-tabs-tab{
+                    .ant-tabs-tab-btn{
+                        font-size: 11px;
+                    }
+                   
+                }
+                // border heighlightin kelly part
+                border-bottom: 1px solid #d1a543;
+                padding-bottom: 7px;
               }
               [data-node-key="0"]{
                 margin-right: 8px;
@@ -80,7 +99,8 @@
                    .gemBar{
                     border-bottom: 1px solid #d1a543;
                     // 為了看起來和Mobile Legacy Tab下方的橫線重疊而加的padding
-                    padding-bottom: 5px;
+                    padding-bottom: 1px;
+                    padding-top: 4px;
                    }
                }
        
@@ -101,7 +121,7 @@
  
                 .ant-tabs-tab-active{
                  color:#d1a543;
-                     font-weight: 500;
+                     font-weight: 300;
                 }
                 
             }

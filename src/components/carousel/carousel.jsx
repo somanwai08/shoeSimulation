@@ -2,7 +2,6 @@ import './carousel.scss'
 import React from 'react'
 import { Carousel} from 'antd'
 import FinalShoe1 from '../finalShoe1/finalShoe1';
-import ShoeCloseUp from '../ShoeCloseUp/shoeCloseUp';
 import HeelsShowPanel from '../Heels/HeelsShow/heelsShowPanel';
 
 export default function CustomCarousel() {
@@ -24,11 +23,6 @@ export default function CustomCarousel() {
       <FinalShoe1></FinalShoe1>
       </h3>
     </div>
-    {/* <div>
-      <h3 className='slide' >
-      <ShoeCloseUp></ShoeCloseUp>
-      </h3>
-    </div> */}
     <div>
       <h3 className='slide' >
       <HeelsShowPanel></HeelsShowPanel>

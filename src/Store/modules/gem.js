@@ -14,6 +14,7 @@ export const gemImagesKelly = requireContextKelly.keys().map(requireContextKelly
 const requireContext1 = require.context('../../assets/images/legacy2',false)
 export const gemImages1 = requireContext1.keys().map(requireContext1)
 
+
 export const gemSlice = createSlice({
     name:'gem',
     initialState:{
@@ -157,6 +158,7 @@ export const gemSlice = createSlice({
                 title:"ZOHIKO 4",
                 product:[
                  {name:"Zohiko 4 Be Brave",src:gemImages[44]},
+                 {name:"Zohiko 4 Great Wave",src:gemImages[45]},
                 ]
               },
               gemGroup3:{

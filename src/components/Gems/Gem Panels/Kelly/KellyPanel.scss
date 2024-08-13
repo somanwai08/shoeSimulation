@@ -14,12 +14,12 @@
         // margin-top: 10px;
         .ant-tabs-nav-list {
             justify-content: center;
-            line-height: 0.3;
+            line-height: 0.1;
             
             .ant-tabs-tab {
               justify-content: center;
               background-color: #FDFAF6;
-              width: 95px!important;
+              width: 72px!important;
               padding: 9px 0;
               .ant-tabs-tab-btn {
                 color: #d1a543;
@@ -27,7 +27,7 @@
           
               &.ant-tabs-tab-active {
                 background-color: #d1a543;
-                font-weight: 600;
+                // font-weight: 600;
                 width:120px;
                 
           
@@ -38,8 +38,9 @@
             }
           }
           .scrollable{
-            padding-top: 32px;
-            padding-bottom: 32px;
+            padding-top: 27px;
+            padding-bottom: 27px;
+            justify-content: center;
           }
     }
 

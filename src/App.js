@@ -1,14 +1,11 @@
 
 import './App.css';
-import { Card, Col, Row} from 'antd'
-import FinalShoe1 from './components/finalShoe1/finalShoe1';
-import ShoeCloseUp from './components/ShoeCloseUp/shoeCloseUp';
+import {  Col, Row} from 'antd'
 import { Footer } from 'antd/es/layout/layout';
 import { Outlet,useLocation,useNavigate } from 'react-router-dom';
 import HeelsSelectPanel from './components/Heels/HeelsSelectPanel/heelsSelectPanel';
-import HeelsShowPanel from './components/Heels/HeelsShow/heelsShowPanel';
 import logo from './assets/images/footer&header/Logo-for-Simulation.png'
-import { setSelectedGem ,ResetKelly,ResetLegacy} from './Store/modules/gem';
+import { ResetKelly,ResetLegacy} from './Store/modules/gem';
 import { useDispatch } from 'react-redux';
 import FooterButton from './components/footerButton/footerButton';
 import MobileDetect from 'mobile-detect';
@@ -28,7 +25,7 @@ function App() {
 
 
   return (
-    <div className="App" style={{overflowY:md.tablet()===null?'auto':'hidden'}}>
+    <div className="App" style={{overflowY:md.tablet()!==null||md.mobile()!==null?'hidden':'auto'}}>
       <Row  className='desktop'>
         <Row className='logo' style={{height:"10vh",minHeight:'81px',borderBottom:'1px solid #d1a543'}}>
           <img alt='' src={headerNFooter[1]} style={{height:'100%',margin:'0 auto'}}></img>
@@ -48,12 +45,7 @@ function App() {
           <img alt='' src={logo} style={{height:'100%',margin:'0 auto'}}></img>
         </Row>
     <Row className='tablet' >
-      {/* <Row className='tablet-upper' justify='center'> */}
-       {/* <Col> */}
       <CustomCarousel></CustomCarousel>
-      {/* <CarouselA></CarouselA> */}
-    {/* </Col> */}
-      {/* </Row> */}
       <Row className='tablet-bottom'>
         <Row className='bottom-upper'  >
         <Outlet></Outlet>
@@ -63,44 +55,10 @@ function App() {
         </Row>
       </Row>
     </Row>
-   
-   
-    {/* <Row className='mobile'>
-      <Row >
-        <Col span={16} className='mobile-upper'><FinalShoe1></FinalShoe1></Col>
-        
-        <Col span={8}  style={{height:'40vh'}}>
-        <Row  style={{height:'33%'}} justify='center'>
-        <FinalShoe1 ></FinalShoe1>
-        </Row>
-        <Row  style={{height:'33%'}} justify='center'>
-        <FinalShoe1 ></FinalShoe1>
-        </Row>
-        <Row  style={{height:'33%'}} justify='center'>
-        <HeelsShowPanel  ></HeelsShowPanel>
-        </Row>
-        </Col>
 
-      </Row>
-      <Row>
-      <Col span={16} className='mobile-halfContainer'>
-      <Outlet></Outlet>
-      </Col>
-        <Col span={8} className='mobile-halfContainer' just>
-        <HeelsSelectPanel></HeelsSelectPanel>
-        </Col>
-        
-        </Row>
-      
-    </Row> */}
 
 <Row className='mobile' >
-      {/* <Row className='tablet-upper' justify='center'> */}
-       {/* <Col> */}
       <CustomCarousel></CustomCarousel>
-      {/* <CarouselA></CarouselA> */}
-    {/* </Col> */}
-      {/* </Row> */}
       <Row className='mobile-bottom'>
         <Row className='bottom-upper'  >
         <Outlet></Outlet>
@@ -119,7 +77,7 @@ function App() {
               console.log('to classic')
               // navigate('/mesh-simulation/classic')
          }}>
-           <FooterButton title='PREVIOUS' text='CLASSIC'></FooterButton>
+           <FooterButton title='PREVIOUS' text='CLASSIC' style={{opacity:0}} ></FooterButton> 
          </Col>:<Col 
           className='Button-Wrap'
          onClick={()=>{
@@ -151,9 +109,8 @@ function App() {
         
         </Row>
       </Footer>
-     
+     <CarouselA></CarouselA>
     </div>
-    // <CarouselA></CarouselA>
   );
 }
 

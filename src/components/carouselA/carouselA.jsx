@@ -3,43 +3,37 @@ import './carouselA.scss'
 import { Carousel } from 'antd'
 import Finalshoe1 from '../finalShoe1/finalShoe1';
 
-export default function CarouselA() {
-    const contentStyle = {
-        margin: 0,
-        height: '160px',
-        color: '#fff',
-        lineHeight: '160px',
-        textAlign: 'center',
-        background: '#364d79',
-      };
+export default function CarouselA(n) {
+         
+          function fn(n){
+                 let step=0
+                 if(n===0){
+                     return 0
+                 }
+                 if(n===1){
+                     return 1
+                 }
+                 if(n===2){
+                  return 2
+                 }
+                 while(n>2){
+                  console.log('hi')
+                  if(n%2===0){
+                    console.log('run')
+                    n=n/2
+                    step++
+                }else{
+                  n=n-1
+                  step++
+                }
+                 }
+                 return step+2
+          }
+console.log(fn(10))
 
-      const onChange = (currentSlide) => {
-        // console.log(currentSlide);
-      };
   return (
     <>
- <>
-    <Carousel arrows dots={false} className='custom-carouselA'>
-      <div>
-        <h3 
-        // style={contentStyle}
-        className='slide'
-        >
-            <Finalshoe1></Finalshoe1>
-        </h3>
-      </div>
-      <div>
-        <h3 
-        // style={contentStyle}
-        className='slide'
-        >
-            <Finalshoe1></Finalshoe1>
-        </h3>
-      </div>
-    
-    </Carousel>
-  
-  </>
+
     </>
   )
 }

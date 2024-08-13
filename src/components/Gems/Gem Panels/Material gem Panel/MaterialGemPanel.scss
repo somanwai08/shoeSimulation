@@ -12,12 +12,34 @@
     border-radius: 4px;
 }
 
-
+@media screen and (max-width:576px){
+    .MaterialTab{
+        height: 169px;
+        margin-top: 6px;
+        h4{
+            margin-top: 2px;
+            font-size: 9px;
+        }
+        .gemBar{
+            .gemBar1{
+                width:227px;
+                .gem{
+                    margin-right: 6px;
+                    margin-left: 6px;
+                    img{
+                        width:33px
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (min-width:576px) and (max-width:992px){
     .MaterialTab{
         height: 22vh;
         margin: 0 auto;
         margin-top: -13px;
-        width:325px;
+        width:375px;
+        
     }
 }

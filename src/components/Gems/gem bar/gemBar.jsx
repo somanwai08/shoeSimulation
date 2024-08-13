@@ -10,6 +10,7 @@ export default function GemBar(props) {
       const myClass = classnames({
         'gemBar':true,
         'border':horizontal?true:false
+
       })
 
       

@@ -45,7 +45,9 @@
             border: 1px solid #D1A543;
             color:#D1A543;
         }
-    
+        @media (min-width:500px) and (max-width:576px){
+            width: 40%;
+        }
        
     }
 }
@@ -103,12 +105,9 @@
 
 @media screen  and (min-width:992px){
    .finalShoeContainer{
-    width: 40vh;
-    height:40vh;
-    min-height:293px;
-    min-width:293px;
-     width: 500px;
-     height:500px;
+    
+    min-height:239px;
+    min-width:239px;
      margin: 0 auto;
      .finalBag{
         position: relative;
@@ -117,7 +116,6 @@
         left: 50%;
         transform: translateX(-50%);
             width:100%
-
         }
     
         .gem{
