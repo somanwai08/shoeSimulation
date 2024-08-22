@@ -14,7 +14,7 @@ export default function DesktopKellyGemTab() {
   return (
                
     <div className='DeskGemTab' id='DeskKellyGemTab'>
-      <Headline title='KELLY'></Headline>
+      <Headline title='KLY64'></Headline>
      
          <div className='main-Tab'>
           <KellyGemPanel></KellyGemPanel>

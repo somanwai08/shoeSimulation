@@ -1,7 +1,7 @@
 {
   "name": "mesh-sim",
   "version": "0.1.0",
-  "homepage": "mesh-simulation",
+  "homepage": "mesh",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^5.4.0",

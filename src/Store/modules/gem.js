@@ -18,11 +18,11 @@ export const gemImages1 = requireContext1.keys().map(requireContext1)
 export const gemSlice = createSlice({
     name:'gem',
     initialState:{
-        selectedGem:'Arctic 2 White Gold Alfalfa',
+        selectedGem:'',
         selectedKelly:{
           selectedSide:'LEFT',
-          LEFT:'',
-          RIGHT:''
+          LEFT:'Kelly 1',
+          RIGHT:'Kelly 2'
         },
         selectedSeries:'Artist Series',
         artist:{
@@ -194,8 +194,8 @@ export const gemSlice = createSlice({
       },
       ResetKelly:(state)=>{
         state.selectedKelly.selectedSide='LEFT'
-        state.selectedKelly.LEFT=''
-        state.selectedKelly.RIGHT=''
+        state.selectedKelly.LEFT='Kelly 1'
+        state.selectedKelly.RIGHT='Kelly 2'
       },
       ResetLegacy:(state)=>{
         state.selectedGem=''

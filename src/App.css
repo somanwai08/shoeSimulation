@@ -42,6 +42,12 @@
   width: 34px;
 }
 
+.fakeBtn{
+  width: 50px;
+  height:50px;
+  /* border:1px red solid; */
+}
+
 @media (min-width:992px){
   .ant-layout-footer {
     padding: 0;
@@ -69,9 +75,15 @@
   }
 
   .desktop .upper{
+    position: relative;
     padding-top: 10px;
     margin: 0 auto;
         max-width: 86%;
+  }
+  .price{
+    position: absolute;
+    left: 70%;
+    bottom:10%;
   }
   .desktop .bottom{
     justify-content: center;
@@ -97,10 +109,21 @@
   }
 @media  (min-width:576px) and (max-width:991px){
       .tablet{
+        position: relative;
         display:block;
         width: 71%;
         margin: 0 auto;
       }
+      .tablet .price{
+        position: absolute;
+        bottom: 55%;
+        right:10%;
+      }
+      .tablet .price1{
+        position: absolute;
+        bottom:53%;
+        right:10%;
+       }
       .tablet-bottom{
         height: 39vh;
         min-height: 400px;
@@ -139,8 +162,19 @@
 /* 控制mobile版本何時消失 */
 @media (max-width:575px){
   .mobile{
+    position: relative;
     display:block;
     margin: 0 auto;
+   }
+   .mobile .price{
+    position: absolute;
+    bottom:66%;
+    right:16%
+   }
+   .mobile .price1{
+    position: absolute;
+    bottom:63%;
+    right:16%
    }
    .mobile .mobile-bottom{
     height: 39vh;

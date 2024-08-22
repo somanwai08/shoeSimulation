@@ -1,0 +1,50 @@
+.price{
+    color:#6E550f;
+    color:rgba(209,165,67,0.3);
+    @media (max-width:575px) {
+       font-size: 9px;
+    }
+    
+    @media (min-width:576px) and (max-width:992px){
+        font-size: 11px;
+     }
+
+}
+
+.ant-switch {
+    &.ant-switch-checked {
+      background-color: rgba(209,165,67,0.2);
+      &:hover {
+        &:not(.ant-switch-disabled) {
+        background-color: rgba(209,165,67,0.2);
+        }
+      }
+    }
+    // &.ant-switch-small{
+    //   min-width: 13px;
+    //   height:10px;
+    //   .ant-switch-handle{
+    //     width: 6px;
+    //      height: 6px;
+    //   }
+    //   .ant-switch-inner{
+    //     padding-inline-start: 13px;
+    //     padding-inline-end: 5px;
+    //   }
+    //   &.ant-switch-checked{
+    //     .ant-switch-inner{
+    //       padding-inline-start: 5px;
+    //       padding-inline-end: 13px;
+    //     }
+    //     .ant-switch-handle{
+    //       inset-inline-start: calc(100% - 8px);
+    //     }
+    //   }
+    // }
+    &:hover{
+      &:not(.ant-switch-disabled){
+        background: rgba(0,0,0,0.1);
+      }
+    }
+  }
+ 

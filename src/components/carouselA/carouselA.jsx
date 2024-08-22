@@ -3,37 +3,42 @@ import './carouselA.scss'
 import { Carousel } from 'antd'
 import Finalshoe1 from '../finalShoe1/finalShoe1';
 
-export default function CarouselA(n) {
+export default function CarouselA() {
          
-          function fn(n){
-                 let step=0
-                 if(n===0){
-                     return 0
-                 }
-                 if(n===1){
-                     return 1
-                 }
-                 if(n===2){
-                  return 2
-                 }
-                 while(n>2){
-                  console.log('hi')
-                  if(n%2===0){
-                    console.log('run')
-                    n=n/2
-                    step++
-                }else{
-                  n=n-1
-                  step++
-                }
-                 }
-                 return step+2
-          }
-console.log(fn(10))
+        const arr=[0,2,3,3,5,2,1,0]
 
+        function judgeMountain(arr){
+            if(arr.length===1||arr.length===2){
+              // edge case:arr length is too short
+              return false
+            }else{
+              const max = Math.max(...arr)
+              const index = arr.findIndex(item=>item===max)
+              
+              // edge case:the max number is at the end of the arr
+              // edge case:the max number is the first element
+              if(index===arr.length-1||index===0){
+                return false
+              }
+              for(let i=0;i<index;i++){
+                if(arr[i]>=arr[i+1]){
+                  return false
+                }
+              }
+              for(let i=index;i<arr.length;i++){
+                if(arr[i]<=arr[i+1]){
+
+                  return false
+                }
+              }
+              return true
+            }
+        }
+
+judgeMountain(arr)
+console.log(judgeMountain(arr))
   return (
     <>
-
     </>
   )
 }

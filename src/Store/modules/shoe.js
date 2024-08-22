@@ -4,7 +4,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const shoeSlice = createSlice({
     name:'shoe',
     initialState:{
-        selectedHeel:'90mm',
+        selectedHeel:'90mm-White',
 
         
 

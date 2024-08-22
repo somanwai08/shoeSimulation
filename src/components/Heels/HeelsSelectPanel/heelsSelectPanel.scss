@@ -1,32 +1,37 @@
 
-
-.heels-pic{
-    padding: 10px;
-    position: relative;
-
-    .active{
-
-        &.indicator {
-            position: absolute;
-            left: 50%;
-            bottom: -8px;
-            transform: translateX(-50%);
-            width: 5px;
-            height: 5px;
-            background-color: transparent;
-            border-radius: 50%;
-            display: inline-block;
-          }
+.Heels-section{
+    .heading{
+        color:#6E550F;
     }
-
-    .height-txt{
-        position: absolute;
-        bottom: -5%;
-        color:#d1a543;
-        left:50%;
-        transform: translate(-50%);
+    .heels-pic{
+        padding: 10px;
+        position: relative;
+    
+        .active{
+    
+            &.indicator {
+                position: absolute;
+                left: 50%;
+                bottom: -8px;
+                transform: translateX(-50%);
+                width: 5px;
+                height: 5px;
+                background-color: transparent;
+                border-radius: 50%;
+                display: inline-block;
+              }
+        }
+    
+        .height-txt{
+            position: absolute;
+            bottom: -5%;
+            color:#6E550F;
+            left:50%;
+            transform: translate(-50%);
+        }
     }
 }
+
 
 @media screen and (max-width:576px) {
     .Heels-section{
@@ -41,9 +46,9 @@
             margin-top: -12px;
             .heels-choice{
                 padding: 8px 0;
-                width:85px;
+                width:67px;
                 .ant-image{
-                    width: 72%!important;
+                    width: 93%!important;
                 }
             }
             .height-txt{
@@ -100,7 +105,10 @@
             margin-top: -25px;
             .heels-choice{
                 padding: 8px 0;
-                width: 143px;
+                width: 105px;
+                .ant-image{
+                      width:80%!important;
+                }
                 .active{
     
                     &.indicator {

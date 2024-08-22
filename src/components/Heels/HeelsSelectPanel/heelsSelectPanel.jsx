@@ -30,7 +30,7 @@ export default function HeelsSelectPanel() {
         const heelsArr=gemImages1.map((item,i)=>{
          const height = item.split('.')[1].split('.')[0]
          const heightLabel = height.split('-')[0]
-         const color = item.split('-')[2].split('.')[0]
+         const color = item.split('-')[1].split('.')[0]
 
          const myClass2 = classnames({
           'indicator':true,
@@ -57,7 +57,7 @@ export default function HeelsSelectPanel() {
 
   return (
     <div className='Heels-section'>
-      <Headline title='HEELS' borderTop={false}></Headline>
+      <Headline title='Heels' borderTop={false}></Headline>
         <Row className='heels-pic' >
            
             {heelsArr}

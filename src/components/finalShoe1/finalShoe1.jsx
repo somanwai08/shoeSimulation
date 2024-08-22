@@ -9,7 +9,8 @@ import { gemImages1 } from '../../Store/modules/gem.js'
 import legacyShoeImg from '../../assets/images/shoe/Marlene Mesh 75 24K Gold White Calf-forWebUse.jpg'
 // 引入kelly gem鞋圖片
 import kellyShoeImg from '../../assets/images/shoe/Marlene Mesh 75 24K Gold White Calf and Mesh with Part C_Without_Springbar_IG_1x1.jpg'
-
+// 引入空白圖片
+import blank from '../../assets/images/empty.png'
 
 
 // 批量引入Kelly gem圖片
@@ -21,18 +22,18 @@ const gemImages2 = requireContext3.keys().map(requireContext3)
 
 
 
+
+
 export default function Finalshoe1() {
+  const location = useLocation()
+  const isLegacy = location.pathname.split('/')[2]==='legacy'?true:false
     const selectedGem=useSelector(state=>state.gem.selectedGem)
     const selectedKelly = useSelector(state=>state.gem.selectedKelly)
-    const [gemPic,setGemPic]=useState(gemImages1[0])
-    const [leftKellyPic,setLeftKellyPic]=useState('')
-    const [rightKellyPic,setRightKellyPic]=useState('')
+    const [gemPic,setGemPic]=useState(isLegacy?gemImages1[0]:blank)
+    const [leftKellyPic,setLeftKellyPic]=useState(isLegacy?blank:gemImages2[0])
+    const [rightKellyPic,setRightKellyPic]=useState(isLegacy?blank:gemImages2[15])
     
     const dispatch=useDispatch()
-    const location = useLocation()
-    const isLegacy = location.pathname.split('/')[2]==='legacy'?true:false
-    
-    
 
     // 選擇gem時變化的副作用
     useEffect(()=>{
@@ -72,10 +73,9 @@ export default function Finalshoe1() {
     <div className='finalShoeContainer'>
       <div className='finalBag'>
           <img className='shoe' src={isLegacy?legacyShoeImg:kellyShoeImg} alt='' />
-          {/* 下面三行代碼，都是因為防止移動設備上出現邊框，而設置滿足具體條件才顯示該圖像，否則不顯示 */}
-          {selectedGem===''?'':<img className='gem' src={gemPic} alt='' />}
-          {selectedKelly.LEFT===''?'':<img className='leftKelly' src={isLegacy?'':leftKellyPic} alt='' />}
-          {selectedKelly.RIGHT===''?'':<img className='rightKelly' src={isLegacy?'':rightKellyPic} alt='' />}
+          <img className='gem' src={isLegacy?gemPic:blank} alt='' />
+          <img className='leftKelly' src={isLegacy?blank:leftKellyPic} alt='' />
+          <img className='rightKelly' src={isLegacy?blank:rightKellyPic} alt='' />
           
       </div>
       

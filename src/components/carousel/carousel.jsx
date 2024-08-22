@@ -17,6 +17,7 @@ export default function CustomCarousel() {
       };
 
   return (
+    <div >
     <Carousel afterChange={onChange} arrows dots={false} className='custom-carousel'>
     <div>
       <h3 className='slide' >
@@ -29,5 +30,7 @@ export default function CustomCarousel() {
       </h3>
     </div>
   </Carousel>
+    </div>
+    
   )
 }

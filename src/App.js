@@ -5,12 +5,12 @@ import { Footer } from 'antd/es/layout/layout';
 import { Outlet,useLocation,useNavigate } from 'react-router-dom';
 import HeelsSelectPanel from './components/Heels/HeelsSelectPanel/heelsSelectPanel';
 import logo from './assets/images/footer&header/Logo-for-Simulation.png'
-import { ResetKelly,ResetLegacy} from './Store/modules/gem';
+import { setSelectedGem,ResetKelly} from './Store/modules/gem';
 import { useDispatch } from 'react-redux';
 import FooterButton from './components/footerButton/footerButton';
-import MobileDetect from 'mobile-detect';
 import CustomCarousel from './components/carousel/carousel';
 import CarouselA from './components/carouselA/carouselA';
+import PriceTag from './components/priceTag/priceTag';
 
 const requireContext=require.context('../src/assets/images/footer&header/',false)
 const headerNFooter = requireContext.keys().map(requireContext)
@@ -21,11 +21,10 @@ function App() {
         let location = useLocation()
         const navigate = useNavigate()
         const dispatch = useDispatch()
-        const md = new MobileDetect(window.navigator.userAgent)
 
 
   return (
-    <div className="App" style={{overflowY:md.tablet()!==null||md.mobile()!==null?'hidden':'auto'}}>
+    <div className="App" style={{overflowY:'hidden'}}>
       <Row  className='desktop'>
         <Row className='logo' style={{height:"10vh",minHeight:'81px',borderBottom:'1px solid #d1a543'}}>
           <img alt='' src={headerNFooter[1]} style={{height:'100%',margin:'0 auto'}}></img>
@@ -46,6 +45,7 @@ function App() {
         </Row>
     <Row className='tablet' >
       <CustomCarousel></CustomCarousel>
+      {location.pathname.includes('kly64')&&<PriceTag></PriceTag>} 
       <Row className='tablet-bottom'>
         <Row className='bottom-upper'  >
         <Outlet></Outlet>
@@ -59,6 +59,7 @@ function App() {
 
 <Row className='mobile' >
       <CustomCarousel></CustomCarousel>
+      {location.pathname.includes('kly64')&&<PriceTag></PriceTag>} 
       <Row className='mobile-bottom'>
         <Row className='bottom-upper'  >
         <Outlet></Outlet>
@@ -71,18 +72,19 @@ function App() {
        
       <Footer>
         <Row className='footer'>
-          {location.pathname!=='/mesh-simulation/classic'?<Col 
+          {location.pathname!=='/mesh/classic'?<Col 
          className='Button-Wrap'
          onClick={()=>{
               console.log('to classic')
-              // navigate('/mesh-simulation/classic')
+              // navigate('/mesh/classic')
          }}>
-           <FooterButton title='PREVIOUS' text='CLASSIC' style={{opacity:0}} ></FooterButton> 
+          <div className='fakeBtn'></div>
+           {/* <FooterButton title='PREVIOUS' text='' styles={{display:'none'}} ></FooterButton>  */}
          </Col>:<Col 
           className='Button-Wrap'
          onClick={()=>{
               console.log('to legacy')
-              navigate('/mesh-simulation/legacy')
+              navigate('/mesh/legacy')
          }}>
            <FooterButton title='PREVIOUS' text='LEGACY'></FooterButton>
          </Col>}
@@ -90,26 +92,26 @@ function App() {
         <img src={headerNFooter[0]} className='footer' alt=''/>
         </Col >
        
-        {location.pathname!=='/mesh-simulation/kelly'?<Col 
+        {location.pathname!=='/mesh/kly64'?<Col 
          className='Button-Wrap'
          onClick={()=>{
-              dispatch(ResetLegacy())
-              navigate('/mesh-simulation/kelly')
+              dispatch(ResetKelly())
+              navigate('/mesh/kly64')
          }}>
-           <FooterButton title='NEXT' text='KELLY'></FooterButton>
+           <FooterButton title='NEXT' text='KLY64'></FooterButton>
          </Col>:<Col 
           className='Button-Wrap'
          onClick={()=>{
               // // 為了防止移動設備上有邊框，跳去legacy page之前先清空kelly gem信息
-              dispatch(ResetKelly())
-              navigate('/mesh-simulation/legacy')
+              dispatch(setSelectedGem('Arctic 2 White Gold Alfalfa'))
+              navigate('/mesh/legacy')
          }}>
            <FooterButton title='NEXT' text='LEGACY'></FooterButton>
          </Col>}
         
         </Row>
       </Footer>
-     <CarouselA></CarouselA>
+     {/* <CarouselA></CarouselA> */}
     </div>
   );
 }

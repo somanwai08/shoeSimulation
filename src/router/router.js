@@ -7,15 +7,15 @@ import App from '../App';
 
 export const routes = [
     {
-      path: '/mesh-simulation',
+      path: '/mesh',
       element: <App />,
       children: [
         {
           path: '',
-          element: <Navigate to="kelly" replace />,
+          element: <Navigate to="kly64" replace />,
         },
         {
-          path: 'kelly',
+          path: 'kly64',
           element: <KellyPage />,
         },
         {
