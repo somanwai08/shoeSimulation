@@ -5,38 +5,37 @@ import Finalshoe1 from '../finalShoe1/finalShoe1';
 
 export default function CarouselA() {
          
-        const arr=[0,2,3,3,5,2,1,0]
+        const arr=[17,18,5,4,6,1]
 
-        function judgeMountain(arr){
-            if(arr.length===1||arr.length===2){
-              // edge case:arr length is too short
-              return false
-            }else{
-              const max = Math.max(...arr)
-              const index = arr.findIndex(item=>item===max)
-              
-              // edge case:the max number is at the end of the arr
-              // edge case:the max number is the first element
-              if(index===arr.length-1||index===0){
-                return false
-              }
-              for(let i=0;i<index;i++){
-                if(arr[i]>=arr[i+1]){
-                  return false
-                }
-              }
-              for(let i=index;i<arr.length;i++){
-                if(arr[i]<=arr[i+1]){
-
-                  return false
-                }
-              }
-              return true
+        function greatestRight(arr){
+          if(arr.length===1){
+            arr=[-1]
+          }else {
+            for(let i=0;i<arr.length-1;i++){
+              let tem=0
+                    for(let j=arr.length-1;j>i;j--){
+                      
+                            //  console.log(`i:${i} j:${j}`)
+                             
+                             if(tem<arr[j]){
+                                     tem=arr[j]
+                             }
+                            //  console.log(`arr[i]:${arr[i]}  arr[j]:${arr[j]}  tem:${tem}`)
+                            //  console.log(`第${i}輪，tem：${tem}`)
+                            arr[i]=tem
+                            // console.log(`完了第${i}輪，arr：${arr}tem：${tem}`)
+                    }
+                  
             }
+              arr[arr.length-1]=-1
+            // console.log(arr,'arr')
+            
+          }
+        
         }
 
-judgeMountain(arr)
-console.log(judgeMountain(arr))
+greatestRight(arr)
+// console.log(judgeMountain(arr))
   return (
     <>
     </>

@@ -20,7 +20,7 @@ export default function CustomCarousel() {
     <div >
     <Carousel afterChange={onChange} arrows dots={false} className='custom-carousel'>
     <div>
-      <h3 className='slide' >
+      <h3 className='slide captured' >
       <FinalShoe1></FinalShoe1>
       </h3>
     </div>

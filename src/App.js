@@ -11,6 +11,7 @@ import FooterButton from './components/footerButton/footerButton';
 import CustomCarousel from './components/carousel/carousel';
 import CarouselA from './components/carouselA/carouselA';
 import PriceTag from './components/priceTag/priceTag';
+import ScreenShotBtn from './components/screenShotBtn/screenShotBtn';
 
 const requireContext=require.context('../src/assets/images/footer&header/',false)
 const headerNFooter = requireContext.keys().map(requireContext)
@@ -46,12 +47,19 @@ function App() {
     <Row className='tablet' >
       <CustomCarousel></CustomCarousel>
       {location.pathname.includes('kly64')&&<PriceTag></PriceTag>} 
+      {location.pathname.includes('kly64')&&<ScreenShotBtn></ScreenShotBtn>} 
       <Row className='tablet-bottom'>
         <Row className='bottom-upper'  >
         <Outlet></Outlet>
         </Row>
-        <Row className='bottom-bottom'  >
-        <HeelsSelectPanel borderBottom={true}></HeelsSelectPanel>
+        <Row className='bottom-bottom screenShot'  >
+        {/* <HeelsSelectPanel borderBottom={true}></HeelsSelectPanel> */}
+        <Col className='shot shot1'>
+        </Col>
+        <Col className='shot shot2'>
+        </Col>
+        <Col className='shot shot3'>
+        </Col>
         </Row>
       </Row>
     </Row>
@@ -64,7 +72,7 @@ function App() {
         <Row className='bottom-upper'  >
         <Outlet></Outlet>
         </Row>
-        <Row className='mobile-bottom'  >
+        <Row className='mobile-bottom screenShot'  >
         <HeelsSelectPanel borderBottom={true}></HeelsSelectPanel>
         </Row>
       </Row>
@@ -111,7 +119,15 @@ function App() {
         
         </Row>
       </Footer>
-     {/* <CarouselA></CarouselA> */}
+      <Row className='screentShot'>
+        <Col className='shot shot1'>
+        </Col>
+        <Col className='shot shot2'>
+        </Col>
+        <Col className='shot shot3'>
+        </Col>
+      </Row>
+     <CarouselA></CarouselA>
     </div>
   );
 }

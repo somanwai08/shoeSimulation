@@ -101,6 +101,9 @@
   .mobile-logo{
     display: none;
   }
+  .screentShot{
+    display: none;
+  }
 }
 
 /* 控制tablet版本何時出現 */
@@ -136,7 +139,10 @@
       }
       .tablet-bottom .bottom-bottom{
         width:50%;
-        margin-top: 15px;
+        /* this margin is for the heels section */
+        /* margin-top: 15px; */
+        /* this margin is for the screen shot section */
+        margin-top: 35px;
       }
       .ant-layout-footer {
         background-color: transparent;
@@ -153,6 +159,19 @@
       }
       .Button-Wrap{
         vertical-align: top;
+      }
+      .screentShot{
+        margin: 0 auto;
+        width:70%;
+        height:115px;
+        margin-top: 10px;
+      }
+      .shot{
+        width:33%
+      }
+      .shot canvas{
+        width: 100px !important;;
+        height:70px!important;
       }
 
 }
@@ -201,6 +220,9 @@
   .footer-Button{
     margin-top: -20px;
 
+  }
+  .screentShot{
+    display: none;
   }
 }
 

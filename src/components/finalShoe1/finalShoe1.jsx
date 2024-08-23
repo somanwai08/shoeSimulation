@@ -13,6 +13,7 @@ import kellyShoeImg from '../../assets/images/shoe/Marlene Mesh 75 24K Gold Whit
 import blank from '../../assets/images/empty.png'
 
 
+
 // 批量引入Kelly gem圖片
 const requireContext3 = require.context('../../assets/images/Kelly2/',false)
 const gemImages2 = requireContext3.keys().map(requireContext3)
@@ -68,7 +69,6 @@ export default function Finalshoe1() {
 
 
 
-
   return (
     <div className='finalShoeContainer'>
       <div className='finalBag'>
@@ -76,9 +76,10 @@ export default function Finalshoe1() {
           <img className='gem' src={isLegacy?gemPic:blank} alt='' />
           <img className='leftKelly' src={isLegacy?blank:leftKellyPic} alt='' />
           <img className='rightKelly' src={isLegacy?blank:rightKellyPic} alt='' />
-          
+         
       </div>
       
+     
 
     </div>
     
